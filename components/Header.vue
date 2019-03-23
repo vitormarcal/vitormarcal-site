@@ -1,13 +1,15 @@
 <template>
-    $END$
+  <header>
+
+  </header>
+    
 </template>
 
 <script>
     export default {
-        name: "Header"
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>
