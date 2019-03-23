@@ -1,24 +1,19 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="title">
-        vitormarcal
-      </h1>
-      <h2 class="subtitle">
-        My good Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
+      <title>Olá, eu sou Vítor Marçal.</title>
+      <h2>Seja bem vindo!</h2>
+      <img src="~/assets/images/vtormarcal.svg" title="Oi, eu sou Vítor!" alt="Vítor Marçal, page author, profile picture">
+      <div class="follow-icons">
+        <a href="https://github.com/vitormarcal" title="Meu Github" target="_blank">
+          <img src="~/assets/images/github-logo.svg" alt="Github author"/>
+        </a>
+        <a href="https://www.linkedin.com/in/vitormarcal" title="Meu LinkedIn" target="_blank">
+          <img src="~/assets/images/linkedin-logo.svg" alt="LinkedIn author"/>
+        </a>
       </div>
+
+
     </div>
   </section>
 </template>
