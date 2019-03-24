@@ -2,7 +2,9 @@
   <div>
     <main>
       <c-header/>
-      <nuxt />
+      <transition name="layout" mode="out-in">
+        <nuxt />
+      </transition>
       <c-footer/>
     </main>
   </div>
