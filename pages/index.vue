@@ -1,18 +1,15 @@
 <template>
   <section class="container">
     <div>
-      <title>Olá, eu sou Vítor Marçal.</title>
-      <h2>Seja bem vindo!</h2>
-      <img src="~/assets/images/vtormarcal.svg" title="Oi, eu sou Vítor!" alt="Vítor Marçal, page author, profile picture">
-      <div class="follow-icons">
-        <a href="https://github.com/vitormarcal" title="Meu Github" target="_blank">
-          <img src="~/assets/images/github-logo.svg" alt="Github author"/>
-        </a>
-        <a href="https://www.linkedin.com/in/vitormarcal" title="Meu LinkedIn" target="_blank">
-          <img src="~/assets/images/linkedin-logo.svg" alt="LinkedIn author"/>
-        </a>
-      </div>
 
+      <h1>
+        <span>Olá, eu me chamo</span> <strong>Vítor Marçal.</strong>
+      </h1>
+
+      <h2>Sou um <strong>desenvolvedor full stack</strong>. Isso quer dizer que ajudo empresas, ONGs e pessoas a criar projetos
+          digitais de alta qualidade. De vez em quando, sobra um tempinho para escrever em meu blog.
+      </h2>
+      <v-skill-apresentation/>
 
     </div>
   </section>
@@ -20,41 +17,39 @@
 
 <script>
 
-export default {
-  components: {
+  export default {
+    components: {
+      VSkillApresentation: () => import('~/components/SkillApresentation')
+    }
   }
-}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style  lang="scss">
+  .container {
+    margin: 0 auto;
+    padding: 3rem;
+    min-height: 71.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+    h1, h2 {
+      text-align: left;
+    }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+    h1 {
+      span, strong {
+        display: block;
+      }
+    }
 
-.links {
-  padding-top: 15px;
-}
+    @media (min-width: 1201px) {
+
+        padding-left: 15rem;
+        padding-right: 15rem;
+
+    }
+
+  }
 </style>

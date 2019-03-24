@@ -28,7 +28,7 @@
 <style scoped lang="scss">
 
   footer {
-    background-color: aquamarine;
+    background-color: $green;
     padding: 5px;
     text-align: center;
 
