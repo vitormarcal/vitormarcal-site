@@ -28,7 +28,7 @@ export default {
   */
   css: [
     // SCSS file in the project
-    '@/assets/css/main.scss'
+    '@/assets/css/main.scss',
   ],
 
   /*
@@ -40,8 +40,10 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    scss: '@/assets/css/*.scss'
+  },
 
   /*
   ** Build configuration
