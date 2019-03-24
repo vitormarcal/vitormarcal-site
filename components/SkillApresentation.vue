@@ -28,11 +28,13 @@
         .addActor('dev-text-content-2', { speed: .9, accuracy: 1 });
 
       theater
-        .addScene('dev-text-content-1:Estou pronto para lhe ajudar', 100)
-        .addScene('dev-text-content-2:Seja um site', 200, '.', 200, '.', 200, '. ')
+        .addScene('dev-text-content-1:Estou pronto para lhe ajudar', 200, '.', 200, '.', 200, '. ')
+        .addScene('dev-text-content-1:Seja sua ideia...', 100)
+        .addScene('dev-text-content-2:Um site', 200, '.', 200, '.', 200, '. ')
         .addScene('dev-text-content-2:Um app', 200, '.', 200, '.', 200, '. ' )
         .addScene('dev-text-content-2:Um blog', 200, '.', 200, '.', 200, '. ')
-        .addScene('dev-text-content-2:Vamos tirar sua ideia do papel!', 400)
+        .addScene('dev-text-content-2: ', 200)
+        .addScene('dev-text-content-1:Vamos tirar sua ideia do papel!', 400)
         .addScene(theater.replay.bind(theater))
     }
 
@@ -43,9 +45,13 @@
 
   .apresentation {
     position: absolute;
-    span {
-      display: block;
+    p {
+      font-size: 25px;
+      span {
+        display: block;
+      }
     }
+
   }
 
 </style>
