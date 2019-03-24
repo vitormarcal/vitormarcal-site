@@ -1,0 +1,26 @@
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  margin: 1px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  h1{
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
