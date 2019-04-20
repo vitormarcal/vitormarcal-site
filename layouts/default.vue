@@ -5,7 +5,6 @@
       <transition name="layout" mode="out-in">
         <nuxt />
       </transition>
-      <c-footer/>
     </main>
   </div>
 </template>
