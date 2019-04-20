@@ -5,9 +5,8 @@
   "author": "Vítor Marçal",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt start",
+    "start": "nuxt build",
     "generate": "nuxt generate"
   },
   "dependencies": {
