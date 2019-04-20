@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt start",
-    "start": "nuxt build",
+    "start": "nuxt build --port 3000",
     "generate": "nuxt generate"
   },
   "dependencies": {
