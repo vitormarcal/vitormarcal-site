@@ -5050,7 +5050,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt@^2.5.1:
+nuxt@^2.4.0:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.6.2.tgz#1b40766e1a1d63b8e6fdaa3d87db4184acb2f5fd"
   integrity sha512-yeucSriOfS2le62OiHVkErzV1b1ZXMmy4Uqqmx/I9r3yKEMHloXFqFfTuD2FKum9a7TdyIfnt/uDI0wxeEqbxQ==
