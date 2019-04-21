@@ -29,26 +29,33 @@
     background-color: #ededf3;
     margin: 0 auto;
     padding: 3rem;
+    min-height: 50vh;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
 
-    h1, p {
-      text-align: left;
-    }
+    div {
+      z-index: 1;
+      h1, p {
+        text-align: left;
+      }
 
-    h1 {
-      span, strong {
-        display: block;
+      h1 {
+        span, strong {
+          display: block;
+        }
+      }
+
+      p {
+        margin: 1.52px;
+        line-height: 2.2rem;
+        font-size: 1.75rem;
       }
     }
 
-    p {
-      line-height: 2.2rem;
-      font-size: 1.75rem;
-    }
+
 
     @media (min-width: 1201px) {
 
