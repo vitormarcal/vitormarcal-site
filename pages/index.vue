@@ -29,8 +29,7 @@
     background-color: #ededf3;
     margin: 0 auto;
     padding: 3rem;
-    min-height: 50vh;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
