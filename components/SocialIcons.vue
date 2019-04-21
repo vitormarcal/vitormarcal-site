@@ -19,7 +19,13 @@
 
   .social_icons {
     padding-top: 1.5px;
-    text-align: center;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
+
+
 
 </style>

@@ -39,7 +39,7 @@
       z-index: 1;
 
       h1, p {
-        text-align: center;
+        text-align: left;
       }
 
       h1 {
@@ -77,6 +77,10 @@
           line-height: 1.6rem;
           font-size: 1rem;
           font-weight: 200;
+        }
+
+        h1, p {
+          text-align: center;
         }
       }
 
