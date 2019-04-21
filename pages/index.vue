@@ -40,7 +40,7 @@
       z-index: 1;
 
       h1, p {
-        text-align: left;
+        text-align: center;
       }
 
       h1 {
@@ -62,6 +62,24 @@
 
         padding-left: 15rem;
         padding-right: 15rem;
+
+    }
+
+    @media (max-width: 768px) {
+      div {
+        h1 {
+          font-size: 2.25rem;
+          line-height: 1.875rem;
+          margin-bottom: .9375rem;
+          letter-spacing: -.0625rem;
+        }
+        p {
+          margin: 1.52px;
+          line-height: 1.6rem;
+          font-size: 1rem;
+          font-weight: 200;
+        }
+      }
 
     }
 
