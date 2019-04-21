@@ -1,14 +1,16 @@
 {
   "name": "vitormarcal",
   "version": "1.0.0",
-  "description": "My good Nuxt.js project",
+  "title": "Vítor Marçal | Desenvolvedor fullstack",
+  "description": "Sou um desenvolvedor full stack. Isso quer dizer que posso lhe ajudar a criar projetos digitais de alta qualidade.",
   "author": "Vítor Marçal",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "prod": "nuxt build && nuxt start",
-    "start": "nuxt generate && node server",
+    "start": "node server",
+    "prestart": "nuxt generate",
     "serve": "node server",
     "generate": "nuxt generate"
   },
