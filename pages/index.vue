@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     font-size: 36px;
+    overflow: hidden;
 
     div {
       z-index: 1;
