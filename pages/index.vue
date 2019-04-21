@@ -26,10 +26,10 @@
 
 <style  lang="scss">
   .container {
-    background-color: #ededf3;
     margin: 0 auto;
-    padding: 3rem;
-    min-height: 100vh;
+    padding-top: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
