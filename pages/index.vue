@@ -38,7 +38,6 @@
 
     div {
       z-index: 1;
-      position: absolute;
 
       h1, p {
         text-align: left;
