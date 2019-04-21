@@ -18,7 +18,18 @@
 <style scoped lang="scss">
 
   .social_icons {
-    padding-top: 2rem;
+    position: fixed;
+    z-index: 10000;
+    width: auto;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
 </style>
