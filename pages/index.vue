@@ -28,12 +28,14 @@
   .container {
     margin: 0 auto;
     padding: 3rem;
+    padding-bottom: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
     overflow: hidden;
+    position: relative;
 
     div {
       z-index: 1;
@@ -91,7 +93,7 @@
       display: block;
       width: 100%;
       position: absolute;
-      height: 100px;
+      height: 17%;
       bottom: 0;
       clip-path: polygon(0 100%,100% 100%,100% 0);
       background-color: #4eaae6;
