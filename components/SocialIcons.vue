@@ -19,6 +19,7 @@
 
   .social_icons {
     padding-top: 1.5px;
+    text-align: center;
   }
 
 </style>
