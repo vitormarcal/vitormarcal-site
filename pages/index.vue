@@ -27,9 +27,8 @@
 <style  lang="scss">
   .container {
     margin: 0 auto;
-    padding-top: 20rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 3rem;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,19 +86,17 @@
 
     }
 
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      height: 100px;
+      bottom: 0;
+      clip-path: polygon(0 100%,100% 100%,100% 0);
+      background-color: #4eaae6;
+      background-image: linear-gradient(-270deg, #44a4e2, #2e7eb3);;
+    }
 
-
-  }
-
-  body:after {
-    content: "";
-    display: block;
-    width: 100%;
-    position: absolute;
-    height: 100px;
-    bottom: 0;
-    clip-path: polygon(0 100%,100% 100%,100% 0);
-    background-color: #4eaae6;
-    background-image: linear-gradient(-270deg, #44a4e2, #2e7eb3);;
   }
 </style>
