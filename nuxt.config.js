@@ -1,7 +1,6 @@
 import pkg from './package'
 
 const fs = require("fs");
-const fm = require("front-matter");
 
 const files = fs.readdirSync('./static/articles');
 function getSlugs(post, index) {
@@ -60,19 +59,13 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    ['@nuxtjs/markdownit', { linkify: true } ]
+    ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
   ],
   styleResources: {
     scss: '@/assets/css/*.scss'
   },
   generate: {
-    // routes: function() {
-    //   returnRoutes()
-    // }
-    routes: function() {
-
-      return files.map(getSlugs)
-    }
+    routes: () => files.map(getSlugs)
   },
   /*
   ** Build configuration
