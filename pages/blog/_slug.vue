@@ -1,24 +1,12 @@
 <template>
-
-      <div class="content">
+      <div class="container">
         <div v-html="content"></div>
       </div>
-
-
-
-
-
 </template>
-
 <script>
   export default {
-    data() {
-      return {
-        file: {}
-      }
-    },
     async asyncData ({params}) {
-      const fileContent = await import(`~/static/articles/${params.slug}.md`)
+      const fileContent = await import(`~/static/blog/${params.slug}.md`);
       return {
         content: fileContent.default
       }
@@ -26,7 +14,5 @@
   }
 </script>
 
-<style scoped lang="sass">
-
-
+<style  lang="scss">
 </style>

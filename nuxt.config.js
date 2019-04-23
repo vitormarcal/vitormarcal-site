@@ -1,8 +1,8 @@
 import pkg from './package'
+import fs from 'fs';
 
-const fs = require("fs");
 
-const files = fs.readdirSync('./static/articles');
+const files = fs.readdirSync('./static/blog');
 function getSlugs(post, index) {
   let slug = post.substr(0, post.lastIndexOf('.'));
   return `/blog/${slug}`
