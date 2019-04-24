@@ -15,4 +15,10 @@
 </script>
 
 <style  lang="scss">
+  .container {
+    max-width: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
 </style>
