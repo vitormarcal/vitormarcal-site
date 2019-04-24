@@ -24,7 +24,7 @@
   }
 </script>
 
-<style  lang="scss">
+<style scoped  lang="scss">
   .container {
     margin: 0 auto;
     padding: 3rem;
@@ -42,18 +42,22 @@
 
       h1, p {
         text-align: left;
+        line-height: 1.25;
+        margin-bottom: 12px;
       }
 
       h1 {
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        color: #000000;
         span, strong {
           display: block;
         }
       }
-
       p {
-        margin: 1.52px;
-        line-height: 2.2rem;
-        font-size: 1.75rem;
+        font-size: 21px;
+        font-family: 'Roboto Mono', sans-serif;
       }
     }
 
@@ -69,15 +73,13 @@
     @media (max-width: 768px) {
       div {
         h1 {
-          font-size: 2.25rem;
-          line-height: 1.875rem;
-          margin-bottom: .9375rem;
+          font-size: 33px;
           letter-spacing: -.0625rem;
         }
         p {
           margin: 1.52px;
           line-height: 1.6rem;
-          font-size: 1rem;
+          font-size: 18px;
           font-weight: 200;
         }
 
