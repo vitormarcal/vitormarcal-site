@@ -21,5 +21,20 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
+
+    img {
+      transition: transform .2s; /* Animation */
+      width: 100%;
+
+      margin: 0 auto;
+
+      &:hover {
+        width: 100%;
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+    }
+
+
+
   }
 </style>
