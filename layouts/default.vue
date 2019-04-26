@@ -1,6 +1,7 @@
 <template>
   <div>
     <main>
+        <c-header />
         <nuxt />
     </main>
   </div>
@@ -8,6 +9,7 @@
 <script>
   export default {
     components: {
+      CHeader: () => import('~/components/Header'),
     }
   }
 </script>
