@@ -32,7 +32,7 @@
 
 
     @media (max-width: 720px)  {
-      padding: .2375rem .5rem;
+      display: block;
     }
     
 
