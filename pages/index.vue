@@ -27,8 +27,7 @@
 <style scoped  lang="scss">
   .container {
     margin: 0 auto;
-    padding: 3rem;
-    padding-bottom: 0;
+    padding: 0 3rem;
     min-height: 100vh;
     display: flex;
     justify-content: center;
