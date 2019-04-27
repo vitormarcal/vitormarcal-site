@@ -1,6 +1,7 @@
 <template>
   <header>
-    <nav-bar></nav-bar>
+    <brand/>
+    <nav-bar/>
 
   </header>
     
@@ -8,8 +9,9 @@
 
 <script>
     import NavBar from "./NavBar";
+    import Brand from "./Brand";
     export default {
-      components: {NavBar}
+      components: {Brand, NavBar}
     }
 </script>
 
@@ -22,6 +24,18 @@
     width: 100%;
     z-index: 1000;
     border-bottom: .0625rem solid rgba(0,0,0,.05);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2375rem 2.5rem;
+
+
+    @media (max-width: 720px)  {
+      padding: .2375rem .5rem;
+    }
+    
+
   }
 
 </style>
