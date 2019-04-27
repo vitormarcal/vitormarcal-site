@@ -18,6 +18,9 @@
 <style scoped lang="scss">
 
   nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     ul {
       list-style: none;
       margin: 0;
@@ -28,8 +31,26 @@
       }
     }
 
-    .nav-link {
+    a {
       position: relative;
+      text-decoration: none;
+      color: #2e7eb3;
+
+      &:hover,
+      &.nuxt-link-exact-active,
+      &:focus {
+        color: black;
+        &:before {
+          content: "{ ";
+          color: black;
+          left: 0
+        }
+        &:after {
+          content: " }";
+          color: black;
+          right: 0;
+        }
+      }
     }
   }
 
