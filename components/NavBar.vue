@@ -34,7 +34,7 @@
     a {
       position: relative;
       text-decoration: none;
-      color: #2e7eb3;
+      color: #225A81;
 
       &:hover,
       &.nuxt-link-exact-active,
