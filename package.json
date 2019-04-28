@@ -6,7 +6,7 @@
   "author": "Vítor Marçal",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname 0.0.0.0 --port 3000",
     "build": "nuxt build",
     "prod": "nuxt build && nuxt start",
     "start": "node server",
