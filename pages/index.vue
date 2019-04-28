@@ -67,6 +67,10 @@
         padding-left: 15rem;
         padding-right: 15rem;
 
+        p {
+          margin-right: 20rem;
+        }
+
     }
 
     @media (max-width: 768px) {
