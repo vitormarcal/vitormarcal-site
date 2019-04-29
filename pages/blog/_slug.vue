@@ -18,7 +18,7 @@
 <style  lang="scss">
   .container {
     overflow: hidden;
-    padding: 3rem;
+    padding-top: 5rem;
   }
   .content {
     max-width: 700px;
@@ -40,14 +40,7 @@
       }
     }
 
-    article {
-      display: grid;
-      grid-template-columns: 1fr 740px 1fr;
-    }
 
-    article > * {
-      grid-column: 2;
-    }
 
 
 
