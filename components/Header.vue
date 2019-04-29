@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
     padding: .2375rem 2.5rem;
-
+    top: 0;
 
     @media (max-width: 720px)  {
       display: block;
