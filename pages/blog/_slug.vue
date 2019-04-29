@@ -16,6 +16,10 @@
 </script>
 
 <style  lang="scss">
+
+  .container {
+    margin-top: 6rem;
+  }
   .content {
     max-width: 700px;
     padding-left: 20px;
