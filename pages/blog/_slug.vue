@@ -16,6 +16,10 @@
 </script>
 
 <style  lang="scss">
+  .container {
+    overflow: hidden;
+    padding: 3rem;
+  }
   .content {
     max-width: 700px;
     padding-left: 20px;
@@ -26,13 +30,25 @@
       transition: transform .2s; /* Animation */
       width: 100%;
 
-      margin: 0 auto;
+      grid-column: 1 / -1;
+      margin: 20px 0;
+
 
       &:hover {
         width: 100%;
         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
     }
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 740px 1fr;
+    }
+
+    article > * {
+      grid-column: 2;
+    }
+
 
 
 

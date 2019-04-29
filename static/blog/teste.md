@@ -3,6 +3,8 @@
 An h1 header
 ============
 
+![example image](../../example-image.jpg "An exemplary image")
+
 Paragraphs are separated by a blank line.
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
