@@ -58,9 +58,21 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources',
-    ['@nuxtjs/markdownit', { html: true, linkify: true, breaks: true }]
+    '@nuxtjs/style-resources'
+    ,'@nuxtjs/markdownit'
   ],
+  markdownit: {
+    injected: true,
+    preset: 'default',
+    linkify: true,
+    html: true,
+    breaks: true,
+    use: [
+      //['markdown-it-container', containerName],
+      // 'markdown-it-attrs'
+      'markdown-it-task-lists'
+    ]
+  },
   styleResources: {
     scss: '@/assets/css/*.scss'
   },

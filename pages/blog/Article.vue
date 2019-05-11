@@ -7,39 +7,18 @@
     </div>
     <div class="preview">
       <h2>Preview</h2>
-      <div class="preview-text" v-html="previewText"></div>
+      <div class="preview-text" v-html="$md.render(this.md_text)"></div>
     </div>
   </div>
 </template>
 
 <script>
-  let marked = require('marked');
 
   export default {
     name: "Article",
     data () {
       return {
         md_text: '# Title',
-      }
-    },
-    computed: {
-      previewText() {
-        marked.setOptions({
-          renderer: new marked.Renderer(),
-          gfm: true,
-          tables: true,
-          breaks: true,
-          pedantic: false,
-          sanitize: true,
-          smartLists: true,
-          smartypants: false
-        });
-        return marked(this.md_text)
-      }
-    },
-    methods: {
-      update: function (e) {
-        this.input = e.target.value
       }
     }
   }
