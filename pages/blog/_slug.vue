@@ -15,7 +15,7 @@
   }
 </script>
 
-<style  lang="scss">
+<style scoped lang="scss">
   .container {
     overflow: hidden;
     padding-top: 5rem;
