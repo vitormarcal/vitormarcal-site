@@ -11,6 +11,7 @@ app.use(express.static('dist'));
 
 app.get('*', (req, res, next) => {
   if (req.headers['x-forwarded-proto'] !== 'https') {
+    console.info("redirect to https")
     res.redirect("https://" + req.headers.host + req.url);
   } else {
     next();
