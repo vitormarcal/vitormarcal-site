@@ -1,10 +1,10 @@
 <template>
     <nav>
       <ul>
-        <li><nuxt-link class="nav-link" to="/" title="Página inicial">inicio</nuxt-link></li>
-        <li><nuxt-link class="nav-link"to="/sobre" title="Sobre mim">sobre</nuxt-link></li>
-        <li><nuxt-link class="nav-link" to="/contato" title="Mande uma mensagem">contato</nuxt-link></li>
-        <li><nuxt-link class="nav-link" to="/blog" title="Meus artigos">blog</nuxt-link></li>
+        <li><nuxt-link class="nav-link" to="/" title="Página inicial"><span>{ </span>inicio<span> }</span></nuxt-link></li>
+        <li><nuxt-link class="nav-link"to="/sobre" title="Sobre mim"><span>{ </span>sobre<span> }</span></nuxt-link></li>
+        <li><nuxt-link class="nav-link" to="/contato" title="Mande uma mensagem"><span>{ </span>contato<span> }</span></nuxt-link></li>
+        <li><nuxt-link class="nav-link" to="/blog" title="Meus artigos"><span>{ </span>blog<span> }</span></nuxt-link></li>
       </ul>
     </nav>
 </template>
@@ -36,19 +36,16 @@
       text-decoration: none;
       color: #225A81;
 
+      span {
+        color: transparent;
+      }
+
       &:hover,
       &.nuxt-link-exact-active,
       &:focus {
         color: black;
-        &:before {
-          content: "{ ";
+        span {
           color: black;
-          left: 0
-        }
-        &:after {
-          content: " }";
-          color: black;
-          right: 0;
         }
       }
     }
