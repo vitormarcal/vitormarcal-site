@@ -26,6 +26,10 @@
     padding-right: 20px;
     margin: 0 auto;
 
+    .roboto {
+
+    }
+
     img {
       transition: transform .2s; /* Animation */
       width: 100%;
