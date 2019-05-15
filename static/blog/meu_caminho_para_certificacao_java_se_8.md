@@ -18,9 +18,9 @@ Para me auxilar nesses estudos, dividi o conteúdo em cápitulos. Estudarei cada
 ### 1) Java Basics
 
  <input type="checkbox" checked disabled> Define the scope of variables
- <input type="checkbox" disabled> Define the structure of a Java class
- <input type="checkbox" disabled> Create executable Java applications with a main method
- <input type="checkbox" disabled> Importante other Java packages to make them accessible in your code
+ <input type="checkbox" checked disabled> Define the structure of a Java class
+ <input type="checkbox" checked disabled> Create executable Java applications with a main method
+ <input type="checkbox" checked disabled> Importante other Java packages to make them accessible in your code
  
 ### 2) Working With Java Data Types
  
