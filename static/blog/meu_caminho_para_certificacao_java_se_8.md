@@ -25,71 +25,71 @@ Para me auxilar nesses estudos, dividi o conteúdo em cápitulos. Estudarei cada
 ### 2) Working With Java Data Types
  
  
- <input type="checkbox" disabled> Declare and initialize variables
- <input type="checkbox" disabled> Differentiate between object reference variables and primitive variables
- <input type="checkbox" disabled> Read or write to object fields
- <input type="checkbox" disabled> Explain an Object’s Lifecycle (creation, “dereference” and garbage  collection)
- <input type="checkbox" disabled> Call methods on objects
- <input type="checkbox" disabled> Manipulate data using the StringBuilder class and its methods
- <input type="checkbox" disabled> Creating and manipulating Strings
+ <input type="checkbox" checked disabled> Declare and initialize variables
+ <input type="checkbox" checked disabled> Differentiate between object reference variables and primitive variables
+ <input type="checkbox" checked disabled> Read or write to object fields
+ <input type="checkbox" checked disabled> Explain an Object’s Lifecycle (creation, “dereference” and garbage  collection)
+ <input type="checkbox" checked disabled> Call methods on objects
+ <input type="checkbox" checked disabled> Manipulate data using the StringBuilder class and its methods
+ <input type="checkbox" checked disabled> Creating and manipulating Strings
  
  
 ### 3) Using Operators and Decision Constructs
  
  
- <input type="checkbox" disabled> Use Java operators
- <input type="checkbox" disabled> Use parenthesis to override operator precedence
- <input type="checkbox" disabled> Test equality between Strings and other objects using == and equals ()
- <input type="checkbox" disabled> Create if and if/else constructs
- <input type="checkbox" disabled> Use a switch statement
+ <input type="checkbox" checked disabled> Use Java operators
+ <input type="checkbox" checked disabled> Use parenthesis to override operator precedence
+ <input type="checkbox" checked disabled> Test equality between Strings and other objects using == and equals ()
+ <input type="checkbox" checked disabled> Create if and if/else constructs
+ <input type="checkbox" checked disabled> Use a switch statement
  
  
 ### 4) Creating and Using Arrays
  
  
- <input type="checkbox" disabled> Declare, instantiate, initialize and use a one-dimensional array
- <input type="checkbox" disabled> Declare, instantiate, initialize and use multi-dimensional array
- <input type="checkbox" disabled> Declare and use an ArrayList
+ <input type="checkbox" checked disabled> Declare, instantiate, initialize and use a one-dimensional array
+ <input type="checkbox" checked disabled> Declare, instantiate, initialize and use multi-dimensional array
+ <input type="checkbox" checked disabled> Declare and use an ArrayList
  
  
 ### 5) Using Loop Constructs
  
  
- <input type="checkbox" disabled> Create and use while loops
- <input type="checkbox" disabled> Create and use for loops including the enhanced for loop
- <input type="checkbox" disabled> Create and use do/while loops
- <input type="checkbox" disabled> Compare loop constructs
- <input type="checkbox" disabled> Use break and continue
+ <input type="checkbox" checked disabled> Create and use while loops
+ <input type="checkbox" checked disabled> Create and use for loops including the enhanced for loop
+ <input type="checkbox" checked disabled> Create and use do/while loops
+ <input type="checkbox" checked disabled> Compare loop constructs
+ <input type="checkbox" checked disabled> Use break and continue
  
  
 ### 6) Working with Methods and Encapsulation
  
  
- <input type="checkbox" disabled> Create methods with arguments and return values
- <input type="checkbox" disabled> Apply the static keyword to methods and fields
- <input type="checkbox" disabled> Create an overloaded method
- <input type="checkbox" disabled> Differentiate between default and user defined constructors
- <input type="checkbox" disabled> Create and overload constructors
- <input type="checkbox" disabled> Apply access modifiers
- <input type="checkbox" disabled> Apply encapsulation principles to a class
- <input type="checkbox" disabled> Determine the effect upon object references and primitive values  when they are passed into methods that change the values
+ <input type="checkbox" checked disabled> Create methods with arguments and return values
+ <input type="checkbox" checked disabled> Apply the static keyword to methods and fields
+ <input type="checkbox" checked disabled> Create an overloaded method
+ <input type="checkbox" checked disabled> Differentiate between default and user defined constructors
+ <input type="checkbox" checked disabled> Create and overload constructors
+ <input type="checkbox" checked disabled> Apply access modifiers
+ <input type="checkbox" checked disabled> Apply encapsulation principles to a class
+ <input type="checkbox" checked disabled> Determine the effect upon object references and primitive values  when they are passed into methods that change the values
  
  
 ### 7) Working with Inheritance
  
  
- <input type="checkbox" disabled> Implement inheritance
- <input type="checkbox" disabled> Develop code that demonstrates the use of polymorphism
- <input type="checkbox" disabled> Differentiatebetweenthetypeofareferenceandthetypeofanobject
- <input type="checkbox" disabled> Determine when casting is necessary
- <input type="checkbox" disabled> Use super and this to access objects and constructors
- <input type="checkbox" disabled> Use abstract classes and interfaces
+ <input type="checkbox" checked disabled> Implement inheritance
+ <input type="checkbox" checked disabled> Develop code that demonstrates the use of polymorphism
+ <input type="checkbox" checked disabled> Differentiatebetweenthetypeofareferenceandthetypeofanobject
+ <input type="checkbox" checked disabled> Determine when casting is necessary
+ <input type="checkbox" checked disabled> Use super and this to access objects and constructors
+ <input type="checkbox" checked disabled> Use abstract classes and interfaces
  
  
 ### 8) Handling Exceptions
   
- <input type="checkbox" disabled> Differentiate among checked exceptions, RuntimeExceptions and  Errors
- <input type="checkbox" disabled> Create a try-catch block and determine how exceptions alter normal  program flow
- <input type="checkbox" disabled> Describe what Exceptions are used for in Java
- <input type="checkbox" disabled> Invoke a method that throws an exception
- <input type="checkbox" disabled> Recognize common exception classes and categories
+ <input type="checkbox" checked disabled> Differentiate among checked exceptions, RuntimeExceptions and  Errors
+ <input type="checkbox" checked disabled> Create a try-catch block and determine how exceptions alter normal  program flow
+ <input type="checkbox" checked disabled> Describe what Exceptions are used for in Java
+ <input type="checkbox" checked disabled> Invoke a method that throws an exception
+ <input type="checkbox" checked disabled> Recognize common exception classes and categories
