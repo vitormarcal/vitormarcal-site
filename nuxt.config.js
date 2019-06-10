@@ -68,9 +68,6 @@ export default {
     html: true,
     breaks: true,
     use: [
-      //['markdown-it-container', containerName],
-      // 'markdown-it-attrs'
-      'markdown-it-task-lists'
     ]
   },
   styleResources: {
