@@ -1,6 +1,13 @@
 <template>
   <div class="container">
-    <div v-html="post" class="content">
+
+    <div class="content">
+      <div class="chamada">
+        <h1>{{attr.title}}</h1>
+        <p>{{attr.description}}</p>
+        <span>Escrito por {{attr.author}} em {{attr.created_at}}</span>
+      </div>
+      <div v-html="post" class="content__post"></div>
     </div>
   </div>
 </template>
@@ -16,7 +23,7 @@
       }
     },
     computed: {
-      atributos () {
+      atributos() {
         this.$store.commit('headers/aplicaHead', this.attr);
         return this.$store.state.headers.head
       }
@@ -40,24 +47,90 @@
     padding-right: 20px;
     margin: 0 auto;
 
-    .roboto {
+    .chamada {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
 
-    }
+      h1 {
+        line-height: 0.5
+      }
 
-    img {
-      transition: transform .2s; /* Animation */
-      width: 100%;
+      h1, p, span {
+        margin-top: 1rem;
+      }
 
-      grid-column: 1 / -1;
-      margin: 20px 0;
+      h1, p {
+        margin-bottom: 1px;
+      }
 
-
-      &:hover {
-        width: 100%;
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      p, span {
+        color: $gray-dark;
       }
     }
 
+    .content__post {
+      img {
+        transition: transform .2s; /* Animation */
+        width: 100%;
+
+        grid-column: 1 / -1;
+        margin: 20px 0;
+
+
+        &:hover {
+          width: 100%;
+          transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+      }
+
+      .content {
+        max-width: 700px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+
+        .chamada {
+          margin-top: 5rem;
+          margin-bottom: 3rem;
+
+          h1 {
+            line-height: 0.5
+          }
+
+          h1, p, span {
+            margin-top: 1rem;
+          }
+
+          h1, p {
+            margin-bottom: 1px;
+          }
+
+          p, span {
+            color: $gray-dark;
+          }
+        }
+
+        .content__post {
+          img {
+            transition: transform .2s; /* Animation */
+            width: 100%;
+
+            grid-column: 1 / -1;
+            margin: 20px 0;
+
+
+            &:hover {
+              width: 100%;
+              transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+          }
+
+        }
+
+      }
+
+
+    }
 
   }
 </style>
