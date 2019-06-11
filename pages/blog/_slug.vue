@@ -8,11 +8,28 @@
   export default {
     async asyncData ({params}) {
       const fileContent = await import(`~/static/blog/${params.slug}.md`);
+      const attr = fileContent.default.attributes;
       return {
         content: fileContent.default.html,
-        attibutes: fileContent.default.attributes
+        id: attr.id,
+        name: attr.name,
+        title: attr.title,
+        author: attr.author,
+        description: attr.description,
+        created_at: attr.created_at,
+        tags: attr.tags,
+      }
+    },
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { charset: 'utf-8' },
+          { hid: 'description', name: 'description', content: this.description }
+        ],
       }
     }
+
   }
 </script>
 
