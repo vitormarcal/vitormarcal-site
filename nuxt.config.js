@@ -1,6 +1,6 @@
 import pkg from './package'
 import fs from 'fs';
-
+const path = require('path')
 
 const files = fs.readdirSync('./static/blog');
 function getSlugs(post, index) {
@@ -58,21 +58,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources'
-    ,'@nuxtjs/markdownit'
+    '@nuxtjs/style-resources',
   ],
-  markdownit: {
-    injected: true,
-    preset: 'default',
-    linkify: true,
-    html: true,
-    breaks: true,
-    use: [
-      //['markdown-it-container', containerName],
-      // 'markdown-it-attrs'
-      'markdown-it-task-lists'
-    ]
-  },
   styleResources: {
     scss: '@/assets/css/*.scss'
   },
@@ -87,6 +74,16 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        include: path.resolve(__dirname, 'static/blog'),
+        options: {
+          vue: {
+            root: "dynamicMarkdown"
+          }
+        }
+      })
     }
   }
 }
