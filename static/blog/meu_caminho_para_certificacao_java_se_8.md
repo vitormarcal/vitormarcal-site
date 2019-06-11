@@ -1,9 +1,10 @@
 ---
-author: Vítor Marçal
+id: 'cert-iso-808'
+name: 'cert-iso-808'
 title: Caminho para certificação Java 8
-summary: Do zero à certificação java se 8 IZO-808
-created_at: 2019-06-10
-updated_at: 2019-07-06
+author: Vítor Marçal
+description: Do zero à certificação java se 8 IZO-808
+created_at: 10 July 2019
 tags:
   - certification
   - java IZO-808
