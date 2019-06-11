@@ -9,7 +9,8 @@
     async asyncData ({params}) {
       const fileContent = await import(`~/static/blog/${params.slug}.md`);
       return {
-        content: fileContent.default
+        content: fileContent.default.html,
+        attibutes: fileContent.default.attributes
       }
     }
   }
