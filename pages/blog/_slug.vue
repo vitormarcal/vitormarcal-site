@@ -48,11 +48,11 @@
     margin: 0 auto;
 
     .chamada {
-      margin-top: 5rem;
+      margin-top: 2rem;
       margin-bottom: 3rem;
 
       h1 {
-        line-height: 0.5
+        line-height: 1.2
       }
 
       h1, p, span {
