@@ -6,9 +6,9 @@ author: Vítor Marçal
 description: Como fui do planejamento à certificação java se 8 IZO-808
 created_at: 10 July 2019
 tags:
+  - java
   - certification
-  - java IZO-808
-  - study guide
+  - studyguide
 ---
 ## O começo
 
