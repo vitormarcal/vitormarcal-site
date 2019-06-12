@@ -9,5 +9,6 @@ export const mutations = {
     state.head.meta.push({charset: 'utf-8'});
     state.head.meta.push({hid: 'author', name: 'author', content: attr.author });
     state.head.meta.push({hid: 'description', name: 'description', content: attr.description});
+    state.head.meta.push({hid: 'keywords', name: 'keywords', content: attr.tags.join(", ")});
   }
 };
