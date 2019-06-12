@@ -31,11 +31,10 @@
     computed: {
       atributos() {
         this.$store.commit('headers/aplicaHead', this.attr);
+        this.$store.commit('keywords/color', this.attr.tags)
         return this.$store.state.headers.head
       },
       estiloTag() {
-        this.$store.commit('keywords/color', this.attr.tags)
-        //return this.$store.keywords.tagColor[tag]
         return this.$store.state.keywords.tagColor;
       }
 
