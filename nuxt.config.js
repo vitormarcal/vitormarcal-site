@@ -28,7 +28,8 @@ export default {
       { name: 'robots', content: 'index,follow,noodp' },
       { name: 'revisit-after', content: '7 days' },
       { hid: 'author', name: 'author', content: pkg.author },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'keywords', name: 'keywords', content: 'web development, programmer, Vítor Marçal' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
