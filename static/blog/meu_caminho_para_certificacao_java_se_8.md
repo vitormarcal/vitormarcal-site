@@ -4,7 +4,7 @@ name: 'cert-iso-808'
 title: Caminho para certificação Java 8
 author: Vítor Marçal
 description: Como fui do planejamento à certificação java se 8 IZO-808
-created_at: 10 July 2019
+created_at: 13 May 2019
 tags:
   - java
   - certification
