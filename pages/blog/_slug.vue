@@ -47,11 +47,6 @@
 </script>
 
 <style scoped lang="scss">
-  .container {
-    overflow: hidden;
-    padding-top: 5rem;
-  }
-
   .meta {
     margin-top: 5px;
   }
@@ -63,97 +58,89 @@
     border-radius: 2px
   }
 
-  .content {
-    max-width: 700px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
 
-    .chamada {
-      margin-top: 2rem;
+  .chamada {
+    margin-top: 2rem;
 
-      h1 {
-        line-height: 1.2
-      }
+    h1 {
+      line-height: 1.2
+    }
 
-      h1, p, .meta {
-        margin-top: 5px;
-      }
+    h1, p, .meta {
+      margin-top: 5px;
+    }
 
-      h1, p {
-        margin-bottom: 1px;
-      }
+    h1, p {
+      margin-bottom: 1px;
+    }
 
-      p, .meta {
-        color: $gray-dark;
-      }
+    p, .meta {
+      color: $gray-dark;
+    }
 
-      .tag__list {
-        margin-top: 5px;
+    .tag__list {
+      margin-top: 5px;
+    }
+  }
+
+  .content__post {
+    img {
+      transition: transform .2s; /* Animation */
+      width: 100%;
+
+      grid-column: 1 / -1;
+      margin: 20px 0;
+
+
+      &:hover {
+        width: 100%;
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
       }
     }
 
-    .content__post {
-      img {
-        transition: transform .2s; /* Animation */
-        width: 100%;
+    .content {
+      max-width: 700px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 auto;
 
-        grid-column: 1 / -1;
-        margin: 20px 0;
+      .chamada {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
 
+        h1 {
+          line-height: 0.5
+        }
 
-        &:hover {
+        h1, p, .meta {
+          margin-top: 10px;
+        }
+
+        h1, p {
+          margin-bottom: 1px;
+        }
+
+        p, .meta {
+          color: $gray-dark;
+        }
+      }
+
+      .content__post {
+        img {
+          transition: transform .2s; /* Animation */
           width: 100%;
-          transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-      }
 
-      .content {
-        max-width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: 0 auto;
+          grid-column: 1 / -1;
+          margin: 20px 0;
 
-        .chamada {
-          margin-top: 5rem;
-          margin-bottom: 3rem;
 
-          h1 {
-            line-height: 0.5
-          }
-
-          h1, p, .meta {
-            margin-top: 10px;
-          }
-
-          h1, p {
-            margin-bottom: 1px;
-          }
-
-          p, .meta {
-            color: $gray-dark;
-          }
-        }
-
-        .content__post {
-          img {
-            transition: transform .2s; /* Animation */
+          &:hover {
             width: 100%;
-
-            grid-column: 1 / -1;
-            margin: 20px 0;
-
-
-            &:hover {
-              width: 100%;
-              transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-            }
+            transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
           }
-
         }
 
       }
-
 
     }
 
