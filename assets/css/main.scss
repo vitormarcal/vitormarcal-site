@@ -34,6 +34,18 @@ ul {
   list-style-type: square;
 }
 
+.container {
+  overflow: hidden;
+  padding-top: 5rem;
+
+  .content {
+    max-width: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+}
 .content__post {
   img {
     transition: transform .2s; /* Animation */
