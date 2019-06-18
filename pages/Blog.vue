@@ -73,6 +73,7 @@
 
   .content {
     .content__title {
+      border-bottom: 1px solid #ececea;
 
       h1 {
         margin-bottom: 0;
