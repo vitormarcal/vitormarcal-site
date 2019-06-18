@@ -3,8 +3,13 @@
   <section class="container">
 
     <div class="content">
+      <div class="content__title">
+        <h1>Artigos</h1>
+        <h2>Histórias, dicas, tutoriais, espero que o registro de minhas experiências possa lhe ajudar!</h2>
+
+      </div>
       <div v-for="post in postList">
-        <nuxt-link to="/blog/post.name">
+        <nuxt-link :to="{path: post.name}">
           <h3>{{post.title}}</h3>
           <div class="content__description">
             <p>{{post.description}}</p>
@@ -28,7 +33,9 @@
   export default {
     name: "Blog",
     data: () => ({
-      postList: [
+    }),
+    async asyncData({params}) {
+      const postList = [
         {
           title: "Teste 1",
           tags: ['#java', '#certification', '#javascript'],
@@ -53,16 +60,28 @@
           created_at: '01 April 2019',
           name: 'meu_caminho_para_certificacao_java_se_8',
         }
-      ]
-    }),
-    computed: {
-      resolveLink() {
-        this.data().forEach(e => e.link = `/blog/${e.name}`)
-      }
+      ];
+
+      postList.forEach(e => e.link = `/blog/${e.name}`);
+
+      return {postList: postList};
     }
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+  .content {
+    .content__title {
+
+      h1 {
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+    }
+  }
 
 </style>

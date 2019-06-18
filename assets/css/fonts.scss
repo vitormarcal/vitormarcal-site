@@ -5,6 +5,8 @@
 
 //headers
 $title-large: 41px;
+$title-medium: 35px;
+$title-medium2: 25px;
 $title-line-height: 1.25;
 $title-letter-spacing: 0;
 
@@ -19,6 +21,16 @@ h1 {
   font-weight: 400;
   line-height: $title-line-height;
   letter-spacing: $title-letter-spacing;
+}
+
+h2 {
+  @extend h1;
+  font-size: $title-medium;
+}
+
+h3 {
+  @extend h1;
+  font-size: $title-medium2;
 }
 
 p {
