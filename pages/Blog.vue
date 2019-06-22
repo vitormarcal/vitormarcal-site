@@ -9,19 +9,7 @@
 
       </div>
       <div v-for="post in postList">
-        <nuxt-link :to="{path: post.name}">
-          <h3>{{post.title}}</h3>
-          <div class="content__description">
-            <p>{{post.description}}</p>
-          </div>
-          <div class="content__meta">
-            <div class="content__tag">
-              {{post.tags.toString()}}
-            </div>
-            <span>{{post.author}}</span>
-            <span>{{post.created_at}}</span>
-          </div>
-        </nuxt-link>
+        <CItemArticle v-bind:post="post"/>
       </div>
     </div>
 
@@ -32,6 +20,9 @@
 <script>
   export default {
     name: "Blog",
+    components: {
+      CItemArticle: () => import('~/components/blog/ItemArticle'),
+    },
     data: () => ({
     }),
     async asyncData({params}) {
