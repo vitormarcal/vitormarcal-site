@@ -3,7 +3,7 @@ id: 'em-defesa-da-menor-minoria'
 name: 'em-defesa-da-menor-minoria'
 title: Em defesa da menor minoria
 author: Vítor Marçal
-description: O que são direitos e privilégio e como devemos defender o direito à liberdades individuais.
+description: O que são direitos e privilégio e como devemos defender o direito às liberdades individuais.
 created_at: 13 May 2019
 obs: Originalmente publicado em <a href="https://deixe-fazer.blogspot.com/2015/01/em-defesa-da-menor-minoria.html" target="_blank" rel="noopener noreferrer">Deixe-Fazer</a>
 tags:
