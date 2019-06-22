@@ -48,6 +48,7 @@
 
     p, .meta {
       color: $gray-dark;
+      font-weight: bold;
     }
 
     .tag__list {
