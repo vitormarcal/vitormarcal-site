@@ -6,20 +6,28 @@
         <p>{{post.description}}</p>
       </div>
       <div class="content__meta">
-        <div class="content__tag">
-          {{post.tags.toString()}}
-        </div>
         <span>{{post.author}}</span>
         <span>{{post.created_at}}</span>
+        <CTagArticle v-bind:tags="post.tags" v-bind:estilos="estiloTag"/>
       </div>
     </nuxt-link>
   </div>
 </template>
 
 <script>
-    export default {
-        props: ['post'],
-    }
+  export default {
+    components: {
+      CTagArticle: () => import('~/components/blog/TagArticle'),
+    },
+    props: ['post'],
+    computed: {
+      estiloTag() {
+        this.$store.commit('keywords/color', this.post.tags)
+        return this.$store.state.keywords.tagColor;
+      }
+
+    },
+  }
 </script>
 
 <style scoped lang="scss">
