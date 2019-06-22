@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <nuxt-link to="/blog/post.name">
+    <nuxt-link :to="{path: post.link}">
       <h3>{{post.title}}</h3>
       <div class="content__description">
         <p>{{post.description}}</p>
@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        props: [post],
+        props: ['post'],
     }
 </script>
 
