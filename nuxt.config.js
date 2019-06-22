@@ -3,13 +3,13 @@ import fs from 'fs';
 import path from "path";
 import frontmatter from "front-matter";
 
-const files = fs.readdirSync('./static/blog');
+const files = fs.readdirSync('./content/blog');
 
 const metas = files.map(getAttributes);
 console.log(metas)
 
 function getAttributes(post, index) {
-  const content = fs.readFileSync(`./static/blog/${post}`, 'utf8');
+  const content = fs.readFileSync(`./content/blog/${post}`, 'utf8');
   const att = frontmatter(content);
   return att.attributes
 }
@@ -88,7 +88,7 @@ export default {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
-        include: path.resolve(__dirname, 'static/blog'),
+        include: path.resolve(__dirname, 'content/blog'),
         options: {
           vue: {
             root: "dynamicMarkdown"
