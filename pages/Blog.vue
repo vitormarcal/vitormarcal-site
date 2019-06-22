@@ -8,7 +8,7 @@
         <h2>Histórias, dicas, tutoriais, espero que o registro de minhas experiências possa lhe ajudar!</h2>
 
       </div>
-      <div v-for="post in postList">
+      <div v-for="post in postList" class="content__articles">
         <CItemArticle v-bind:post="post"/>
       </div>
     </div>
@@ -64,7 +64,7 @@
 
   .content {
     .content__title {
-      border-bottom: 1px solid #ececea;
+      /*border-bottom: 1px solid #ececea;*/
 
       h1 {
         margin-bottom: 0;
@@ -73,6 +73,9 @@
         font-size: 25px;
         margin-top: 0;
       }
+    }
+    .content__articles {
+      margin-top: 10px;
     }
   }
 
