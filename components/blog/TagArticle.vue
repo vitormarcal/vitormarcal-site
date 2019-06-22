@@ -11,16 +11,15 @@
   }
 </script>
 
-<style scoped>
-
-  .tag {
-    margin: 3px;
-    font-size: 13px;
-    padding: 2px 5px 3px;
-    border-radius: 2px
-  }
+<style scoped lang="scss">
 
   .meta {
-    margin-top: 5px;
+    margin-top: 10px;
+    .tag {
+      margin: 3px;
+      font-size: 13px;
+      padding: 2px 5px 3px;
+      border-radius: 2px
+    }
   }
 </style>
