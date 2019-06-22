@@ -42,7 +42,7 @@
           author: 'Vítor Marçal',
           description: "Um teste description",
           created_at: '13 May 2019',
-          name: 'meu_caminho_para_certificacao_java_se_8'
+          name: 'o-caminho-para-certificacao-java-se-8'
         },
         {
           title: "Teste 2",
@@ -50,7 +50,7 @@
           author: 'Vítor Marçal',
           description: "Dois teste description",
           created_at: '14 May 2019',
-          name: 'meu_caminho_para_certificacao_java_se_8'
+          name: 'o-caminho-para-certificacao-java-se-8'
         },
         {
           title: "Teste 3",
@@ -58,7 +58,7 @@
           author: 'Vítor Marçal',
           description: "Três teste description",
           created_at: '01 April 2019',
-          name: 'meu_caminho_para_certificacao_java_se_8',
+          name: 'o-caminho-para-certificacao-java-se-8',
         }
       ];
 
