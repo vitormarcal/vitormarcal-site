@@ -9,7 +9,7 @@
 <script>
   export default {
     components: {
-      CHeader: () => import('~/components/Header'),
+      CHeader: () => import('~/components/layout/Header'),
     }
   }
 </script>
