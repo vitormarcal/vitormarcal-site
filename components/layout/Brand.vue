@@ -23,7 +23,7 @@
 
     &:after {
       content: "}";
-      color: #2e7eb3;
+      color: $blue-light;
     }
 
     a {
@@ -31,12 +31,12 @@
       text-decoration: none;
 
       span {
-        color: #2e7eb3;
+        color: $blue-light;
       }
 
       &:hover,
       &:focus {
-        color: #2e7eb3;
+        color: $blue-light;
 
         span {
           color: black;
