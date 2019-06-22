@@ -23,37 +23,14 @@
     components: {
       CItemArticle: () => import('~/components/blog/ItemArticle'),
     },
-    data: () => ({
-    }),
-    async asyncData({params}) {
-      const postList = [
-        {
-          title: "Teste 1",
-          tags: ['#java', '#certification', '#javascript'],
-          author: 'Vítor Marçal',
-          description: "Um teste description",
-          created_at: '13 May 2019',
-          name: 'o-caminho-para-certificacao-java-se-8'
-        },
-        {
-          title: "Teste 2",
-          tags: ['#java', '#certification', '#javascript'],
-          author: 'Vítor Marçal',
-          description: "Dois teste description",
-          created_at: '14 May 2019',
-          name: 'o-caminho-para-certificacao-java-se-8'
-        },
-        {
-          title: "Teste 3",
-          tags: ['#java', '#certification', '#javascript'],
-          author: 'Vítor Marçal',
-          description: "Três teste description",
-          created_at: '01 April 2019',
-          name: 'o-caminho-para-certificacao-java-se-8',
-        }
-      ];
+    data: () => ({}),
+    async asyncData() {
+      const posts = await import(`~/content/posts.js`);
 
-      postList.forEach(e => e.link = `/blog/${e.name}`);
+      const postList = posts.default.map(e => {
+        e.link = `/blog/${e.name}`;
+        return e
+      });
 
       return {postList: postList};
     }
@@ -69,11 +46,13 @@
       h1 {
         margin-bottom: 0;
       }
+
       h2 {
         font-size: 25px;
         margin-top: 0;
       }
     }
+
     .content__articles {
       margin-top: 10px;
     }
