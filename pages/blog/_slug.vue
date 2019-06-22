@@ -19,7 +19,7 @@
 <script>
   export default {
     async asyncData({params}) {
-      const fileContent = await import(`~/static/blog/${params.slug}.md`);
+      const fileContent = await import(`~/content/blog/${params.slug}.md`);
       const post = fileContent.default.html;
       const attr = fileContent.default.attributes;
       return {
