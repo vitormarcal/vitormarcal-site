@@ -5,12 +5,14 @@ import frontmatter from "front-matter";
 
 const files = fs.readdirSync('./content/blog');
 
-const metas = files.map(getAttributes);
-console.log(metas)
+const metas = files.map(getAttributes).filter(e => !!e.id);
+
+fs.writeFileSync('./content/posts.js', 'export default ' + JSON.stringify(metas))
 
 function getAttributes(post, index) {
   const content = fs.readFileSync(`./content/blog/${post}`, 'utf8');
   const att = frontmatter(content);
+  console.log(att.attributes)
   return att.attributes
 }
 
