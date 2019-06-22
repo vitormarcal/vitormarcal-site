@@ -12,7 +12,6 @@ fs.writeFileSync('./content/posts.js', 'export default ' + JSON.stringify(metas)
 function getAttributes(post, index) {
   const content = fs.readFileSync(`./content/blog/${post}`, 'utf8');
   const att = frontmatter(content);
-  console.log(att.attributes)
   return att.attributes
 }
 
