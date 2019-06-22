@@ -6,10 +6,10 @@
         <h1>{{attr.title}}</h1>
         <p>{{attr.description}}</p>
         <div class="meta" style="margin-top: 2rem">Escrito por {{attr.author}} em {{attr.created_at}}</div>
+        <div class="meta" v-if="attr.obs"  v-html="attr.obs"></div>
         <div class="meta">
           <span class="tag" :style="estiloTag[tag]" v-for="(tag, index) in attr.tags"> #{{tag}} </span>
         </div>
-        <br/>
       </div>
 
       <div v-html="post" class="content__post"></div>
