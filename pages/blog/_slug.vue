@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="content">
-      <CPostCabecalho v-bind:attr="attr" v-bind:estilos="estiloTag"/>
+      <CArticleCabecalho v-bind:attr="attr" v-bind:estilos="estiloTag"/>
 
       <div v-html="post" class="content__post"></div>
     </div>
@@ -11,7 +11,7 @@
 <script>
   export default {
     components: {
-      CPostCabecalho: () => import('~/components/blog/PostCabecalho'),
+      CArticleCabecalho: () => import('~/components/blog/ArticleCabecalho'),
     },
     async asyncData({params}) {
       const fileContent = await import(`~/content/blog/${params.slug}.md`);
