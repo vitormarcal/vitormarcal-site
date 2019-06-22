@@ -2,7 +2,8 @@ export const state = () => ({
   tags: {
     'java': {'background': '#01476e', 'color': '#ff8f8f','weight': 'bold'},
     'javascript': {'background': '#F7DF1E', 'color': 'black', 'weight': 'bold'},
-    'none': {'background': '#d6d9e0', 'color': '#606570', 'weight': 'bold'}
+    'opnião': {'background': '#390b0e', 'color': '#78ba79', 'weight': 'bold'},
+    'none': {'background': '#d6d9e0', 'color': '#6c4070', 'weight': 'bold'}
   },
   tagColor: []
 });
