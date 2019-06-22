@@ -2,15 +2,7 @@
   <div class="container">
 
     <div class="content">
-      <div class="chamada">
-        <h1>{{attr.title}}</h1>
-        <p>{{attr.description}}</p>
-        <div class="meta" style="margin-top: 2rem">Escrito por {{attr.author}} em {{attr.created_at}}</div>
-        <div class="meta" v-if="attr.obs"  v-html="attr.obs"></div>
-        <div class="meta">
-          <span class="tag" :style="estiloTag[tag]" v-for="(tag, index) in attr.tags"> #{{tag}} </span>
-        </div>
-      </div>
+      <CPostCabecalho v-bind:attr="attr" v-bind:estilos="estiloTag"/>
 
       <div v-html="post" class="content__post"></div>
     </div>
@@ -18,6 +10,9 @@
 </template>
 <script>
   export default {
+    components: {
+      CPostCabecalho: () => import('~/components/blog/PostCabecalho'),
+    },
     async asyncData({params}) {
       const fileContent = await import(`~/content/blog/${params.slug}.md`);
       const post = fileContent.default.html;
@@ -47,41 +42,6 @@
 </script>
 
 <style scoped lang="scss">
-  .meta {
-    margin-top: 5px;
-  }
-
-  .tag {
-    margin: 3px;
-    font-size: 13px;
-    padding: 2px 5px 3px;
-    border-radius: 2px
-  }
-
-
-  .chamada {
-    margin-top: 2rem;
-
-    h1 {
-      line-height: 1.2
-    }
-
-    h1, p, .meta {
-      margin-top: 5px;
-    }
-
-    h1, p {
-      margin-bottom: 1px;
-    }
-
-    p, .meta {
-      color: $gray-dark;
-    }
-
-    .tag__list {
-      margin-top: 5px;
-    }
-  }
 
   .content__post {
     img {
@@ -103,27 +63,6 @@
       padding-left: 20px;
       padding-right: 20px;
       margin: 0 auto;
-
-      .chamada {
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-
-        h1 {
-          line-height: 0.5
-        }
-
-        h1, p, .meta {
-          margin-top: 10px;
-        }
-
-        h1, p {
-          margin-bottom: 1px;
-        }
-
-        p, .meta {
-          color: $gray-dark;
-        }
-      }
 
       .content__post {
         img {
