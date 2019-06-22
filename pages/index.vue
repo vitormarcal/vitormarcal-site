@@ -102,7 +102,7 @@
       bottom: 0;
       clip-path: polygon(0 100%,100% 100%,100% 0);
       background-color: #4eaae6;
-      background-image: linear-gradient(-270deg, #44a4e2, #2e7eb3);;
+      background-image: linear-gradient(-270deg, #44a4e2, $blue-light);
     }
 
   }

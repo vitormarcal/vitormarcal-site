@@ -31,22 +31,41 @@
     box-shadow: 1px 1px 0 #c2c2c2;
 
     h3 {
-      font-size: x-large;
+      font-size: 25px;
       margin-bottom: 4px;
+      color: black;
+      font-weight: bold
     }
 
     .content__description {
       font-size: 18px;
-      color: $gray-dark;
 
       p {
         margin: 0;
+        font-size: 18px;
+        color: $blue-dark;
+        font-weight: bold
       }
     }
 
     .content__meta {
       font-size: 15px;
       color: $gray-dark;
+    }
+
+    @media (min-width: 768px) {
+
+      h3 {
+        font-size: 45px;
+        font-weight: normal;
+      }
+
+      .content__description {
+        p {
+          font-size: 25px;
+        }
+      }
+
     }
   }
 
