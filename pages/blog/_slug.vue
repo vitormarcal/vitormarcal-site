@@ -2,9 +2,9 @@
   <div class="container">
 
     <div class="content">
-      <CArticleCabecalho v-bind:attr="attr" v-bind:estilos="estiloTag"/>
+      <CArticleCabecalho v-if="attr" v-bind:attr="attr" v-bind:estilos="estiloTag"/>
 
-      <div v-html="post" class="content__post"></div>
+      <div v-if="post" v-html="post" class="content__post"></div>
     </div>
   </div>
 </template>
@@ -13,14 +13,27 @@
     components: {
       CArticleCabecalho: () => import('~/components/blog/ArticleCabecalho'),
     },
-    async asyncData({params}) {
-      const fileContent = await import(`~/content/blog/${params.slug}.md`);
-      const post = fileContent.default.html;
-      const attr = fileContent.default.attributes;
-      return {
-        post: post,
-        attr: attr
+    async asyncData({params, error}) {
+
+      try {
+        const file = await import(`~/content/blog/${params.slug}.md`);
+        const post = file.default.html;
+        const attr = file.default.attributes;
+        return {
+          post: post,
+          attr: attr
+        }
+
+      } catch (e) {
+        let message = 'Ops, algo estranho e inexperado ocorreu';
+        let statusCode = 400;
+        if(e.code.startsWith("MODULE_NOT_FOUND")) {
+          message = 'Post não encontrado';
+          statusCode = 404;
+        }
+        error({statusCode: statusCode, message: message})
       }
+
     },
     methods: {},
     computed: {
