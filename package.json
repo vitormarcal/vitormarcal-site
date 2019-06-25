@@ -15,11 +15,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.4",
     "cross-env": "^5.2.0",
     "frontmatter-markdown-loader": "^1.7.0",
     "morgan": "^1.9.1",
-    "nuxt": "^2.5.1"
+    "nuxt": "^2.5.1",
+    "webpack": "^4.35.0"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^0.1.2",
