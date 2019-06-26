@@ -11,7 +11,8 @@
     "prod": "nuxt build && nuxt start",
     "start": "node server",
     "serve": "node server.js",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "npm run generate; push-dir --dir=dist --branch=gh-pages --cleanup\n"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
@@ -24,6 +25,7 @@
     "@nuxtjs/style-resources": "^0.1.2",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
+    "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0"
   }
 }
