@@ -10,8 +10,7 @@
     "build": "nuxt build",
     "prod": "nuxt build && nuxt start",
     "start": "node server",
-    "prestart": "nuxt generate",
-    "serve": "node $NODE_DEBUG_OPTION server.js",
+    "serve": "node server.js",
     "generate": "nuxt generate"
   },
   "dependencies": {
