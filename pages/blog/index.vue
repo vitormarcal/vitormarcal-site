@@ -20,7 +20,7 @@
 
 <script>
   export default {
-    name: "blog",
+    name: "index",
     components: {
       CItemArticle: () => import('~/components/blog/ItemArticle'),
     },
