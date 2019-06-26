@@ -1,6 +1,7 @@
 <template>
 
   <section class="container">
+    <nuxt-child />
 
     <div class="content">
       <div class="content__title">
@@ -19,7 +20,7 @@
 
 <script>
   export default {
-    name: "Blog",
+    name: "blog",
     components: {
       CItemArticle: () => import('~/components/blog/ItemArticle'),
     },
