@@ -33,14 +33,14 @@
 <style scoped lang="scss">
 
   .card {
-    padding: 0 0 10px 20px;
+    padding: 1rem;
     border-radius: 10px;
     border: 1px solid #d6d6d6;
     box-shadow: 1px 1px 0 #c2c2c2;
 
     h3 {
       font-size: 25px;
-      margin-bottom: 4px;
+      margin: 0 auto;
       color: black;
       font-weight: bold
     }
@@ -52,19 +52,21 @@
         margin: 0;
         font-size: 18px;
         color: $blue-dark;
-        font-weight: bold
+        font-weight: bold;
+        line-height: 1.08;
       }
     }
 
     .content__meta {
       font-size: 15px;
       color: $gray-dark;
+      margin-top: 2rem;
     }
 
     @media (min-width: 768px) {
 
       h3 {
-        font-size: 45px;
+        font-size: 43px;
         font-weight: normal;
       }
 
