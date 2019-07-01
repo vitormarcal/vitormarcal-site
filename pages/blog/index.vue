@@ -43,6 +43,7 @@
   .content {
     .content__title {
       /*border-bottom: 1px solid #ececea;*/
+      margin-bottom: 3rem;
 
       h1 {
         margin-bottom: 0;
@@ -55,7 +56,7 @@
     }
 
     .content__articles {
-      margin-top: 10px;
+      margin-top: 2rem;
     }
   }
 
