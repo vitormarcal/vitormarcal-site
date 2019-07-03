@@ -44,7 +44,7 @@ export default {
       {hid: 'keywords', name: 'keywords', content: 'web development, programmer, Vítor Marçal'}
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'author', type: 'text/plain', href: '/humans.txt'}
     ]
   },
