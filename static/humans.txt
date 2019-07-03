@@ -9,4 +9,4 @@
   Language: Portuguese
   Doctype: HTML5
   IDE: WebStorm
-  Tech stack: Javascript, React.js, Gatsby.js, HTML5, CSS3, stylus
+  Tech stack: Javascript, Nuxt.js, Vue.js, HTML5, CSS3
