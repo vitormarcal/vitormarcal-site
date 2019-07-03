@@ -1,0 +1,12 @@
+/* TEAM */
+  Title: Vítor Marçal
+  Name: Vítor Marçal | Desenvolvedor back-end e entusiasta front-end em Brasília/DF
+  Site: https://vitormarcal.com.br
+  Contact: vitormarcal8@gmail.com
+  Location: Brasília, Distrito Federal, Brazil
+
+/* SITE */
+  Language: Portuguese
+  Doctype: HTML5
+  IDE: WebStorm
+  Tech stack: Javascript, React.js, Gatsby.js, HTML5, CSS3, stylus
