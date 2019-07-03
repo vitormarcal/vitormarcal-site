@@ -36,13 +36,14 @@
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid #d6d6d6;
-    box-shadow: 1px 1px 0 #c2c2c2;
+    box-shadow: 1px 1px 1px 1px #2e7eb3;
+    margin-bottom: 2rem;
 
     h3 {
       font-size: 25px;
       margin: 0 auto;
-      color: black;
-      font-weight: bold
+      color: $blue-light;
+      font-weight: bold;
     }
 
     .content__description {
@@ -76,6 +77,14 @@
         }
       }
 
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 2px 2px $black;
+
+      h3 {
+        color: $black
+      }
     }
   }
 
