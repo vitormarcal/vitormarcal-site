@@ -67,8 +67,7 @@
     @media (min-width: 768px) {
 
       h3 {
-        font-size: 43px;
-        font-weight: normal;
+        font-size: 41px;
       }
 
       .content__description {
