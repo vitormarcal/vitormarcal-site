@@ -35,7 +35,7 @@
   .card {
     padding: 1rem;
     border-radius: 10px;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #ffffff;
     box-shadow: 1px 1px 1px 1px #2e7eb3;
     margin-bottom: 2rem;
 
