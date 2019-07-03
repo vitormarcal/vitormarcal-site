@@ -43,9 +43,9 @@
       &:hover,
       &.nuxt-link-exact-active,
       &:focus {
-        color: black;
+        color: $black;
         span {
-          color: black;
+          color: $black;
         }
       }
     }

@@ -18,7 +18,7 @@
     font-weight: 800;
     &:before {
       content: "{";
-      color: black;
+      color: $black;
     }
 
     &:after {
@@ -27,7 +27,7 @@
     }
 
     a {
-      color: black;
+      color: $black;
       text-decoration: none;
 
       span {
@@ -39,7 +39,7 @@
         color: $blue-light;
 
         span {
-          color: black;
+          color: $black;
         }
       }
     }
