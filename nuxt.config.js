@@ -28,6 +28,10 @@ export default {
   */
   head: {
     title: pkg.title,
+    htmlAttrs: {
+      dir: 'ltr',
+      lang: 'pt-BR'
+    },
     meta: [
       {charset: 'utf-8'},
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
@@ -39,6 +43,7 @@ export default {
       {name: 'googlebot', content: 'index,follow'},
       {name: 'robots', content: 'index,follow,noodp'},
       {name: 'revisit-after', content: '7 days'},
+      {name: 'application-name', content: pkg.title },
       {hid: 'author', name: 'author', content: pkg.author},
       {hid: 'description', name: 'description', content: pkg.description},
       {hid: 'keywords', name: 'keywords', content: 'web development, programmer, Vítor Marçal'}
