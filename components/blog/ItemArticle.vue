@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <article class="card">
     <nuxt-link :to="{path: post.link}">
       <h3>{{post.title}}</h3>
       <div class="content__description">
@@ -11,7 +11,7 @@
         <CTagArticle v-bind:tags="post.tags" v-bind:estilos="estiloTag"/>
       </div>
     </nuxt-link>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -36,7 +36,7 @@
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid #ffffff;
-    box-shadow: 1px 1px 1px 1px #2e7eb3;
+    box-shadow: 1px 1px 1px 1px $blue-light;
     margin-bottom: 2rem;
 
     h3 {
@@ -51,16 +51,17 @@
 
       p {
         margin: 0;
+        font-family: Roboto Mono,sans-serif;
         font-size: 18px;
-        color: $blue-dark;
-        font-weight: bold;
+        color: $gray;
+        font-weight: 500;
         line-height: 1.08;
       }
     }
 
     .content__meta {
       font-size: 15px;
-      color: $gray-dark;
+      color: $gray;
       margin-top: 2rem;
     }
 
@@ -72,7 +73,8 @@
 
       .content__description {
         p {
-          font-size: 25px;
+            font-family: Roboto Mono,sans-serif;
+            font-size: 21px;
         }
       }
 

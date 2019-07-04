@@ -36,8 +36,7 @@
     }
 
     p, .meta {
-      color: $gray-dark;
-      font-weight: bold;
+      color: $gray;
     }
   }
 
