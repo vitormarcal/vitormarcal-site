@@ -4,14 +4,13 @@
     <nuxt-child />
 
     <div class="content">
-      <div class="content__title">
+      <header class="content__title">
         <h1>Artigos</h1>
         <h2>Histórias, dicas, tutoriais, espero que o registro de minhas experiências possa lhe ajudar!</h2>
-
-      </div>
-      <div v-for="post in postList" class="content__articles">
+      </header>
+      <section v-for="post in postList" class="content__articles">
         <CItemArticle v-bind:post="post"/>
-      </div>
+      </section>
     </div>
 
   </section>
