@@ -36,7 +36,7 @@
     padding: 1rem;
     border-radius: 10px;
     border: 1px solid #ffffff;
-    box-shadow: 1px 1px 1px 1px #2e7eb3;
+    box-shadow: 1px 1px 1px 1px $blue-light;
     margin-bottom: 2rem;
 
     h3 {
@@ -53,7 +53,7 @@
         margin: 0;
         font-family: Roboto Mono,sans-serif;
         font-size: 18px;
-        color: #737070;
+        color: $gray;
         font-weight: 500;
         line-height: 1.08;
       }
@@ -61,7 +61,7 @@
 
     .content__meta {
       font-size: 15px;
-      color: $gray-dark;
+      color: $gray;
       margin-top: 2rem;
     }
 

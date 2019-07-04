@@ -50,6 +50,7 @@
       }
 
       h2 {
+        color: $gray;
         font-size: 25px;
         margin-top: 0;
       }
