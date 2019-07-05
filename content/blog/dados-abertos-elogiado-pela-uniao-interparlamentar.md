@@ -5,14 +5,13 @@ title: Dados Abertos é elogiado pela União Interparlamentar
 author: Vítor Marçal
 description: A organização elogiou, dentre outros, a forma de entrega dos dados e a boa comunicação com a sociedade. Com muito orgulho, fui colaborador desse importante projeto para a sociedade civil.
 created_at: 05 de Julho de  2019
-obs: Originalmente publicado em <a href="https://deixe-fazer.blogspot.com/2015/01/em-defesa-da-menor-minoria.html" target="_blank" rel="noopener noreferrer">Deixe-Fazer</a>
 tags:
-  - opnião
-  - liberdades
-  - falsos direitos
+  - dados abertos
+  - restful api
+  - etl tools
 ---
 
-A organização tem sede em Genebra, na Suíça, e tem como objetivo mediar contatos multilaterais dos parlamentos.
+A organização tem sede em Genebra, na Suíça, e tem como objetivo mediar contatos multilaterais dos parlamentos. Dentre vários destaques,  que <a href="https://www.ipu.org/open-data-availability-not-enough-marketing-strategy-brazilian-chamber-deputies" target="_blank" rel="noopener noreferrer">a publicação </a> comentou:
 
 >"Vários parlamentos fizeram grandes investimentos nos últimos anos para disponibilizar ao público informações parlamentares em formatos de dados abertos, para aumentar a transparência e facilitar a participação do público. No entanto, o uso dos dados abertos tem sido freqüentemente limitado. A Câmara dos Deputados do Brasil decidiu, portanto, estabelecer uma estratégia de marketing para aumentar e diversificar o uso de seus dados parlamentares."
 
@@ -48,4 +47,9 @@ Com uma trabalhosa análise de das tabelas, fiz um belo trabalho de tuning que f
 
 Nesse período, fui responsável por algo inédito na busca da Câmara dos Deputados: implementei a busca de membros de um partido dado tal período de tempo. Pode verificar, em nenhum lugar, que não seja no serviço <code>/partidos/{id}/membros </code> da API existe essa informação (até a data de escrita deste post).
 
-Algo que realmente adorei desenvolver foi a nova arquitetura de geração de arquivos dos Dados Abertos. Até minha chegada a geração era 
+Algo que realmente adorei desenvolver foi a nova arquitetura de geração de arquivos dos Dados Abertos. Até minha chegada a geração era
+via uma ferramenta ETL (Extract, Transform, Load) chamada Pentaho. Cheguei a fazer alguns jobs nele para o Dados Abertos mas logo vi que, para o que desejavámos para o Dados Abertos, ela não era a ferramenta ideal. Então, criei uma nova ferramenta de ETL em Java, totalmente extensivel a novas mudanças. O melhor foi que jobs que executavam no Pentaho em 50 minutos passaram a serem executados pela nova ferramenta em 3 minutos. Em outro post abordarei mais detalhes sobre o design da ferramenta mas, para quem tenha ficado cético sobre eu ter substituido uma ferramenta ETL especialista de mercado por uma solução própria, já adianto que existe uma boa discursão na comunidade sobre ETL como ferramenta ou hand code (mãos na massa, produzida sob demanda).
+
+## Como acessar os dados
+
+Você pode verificar a página da documentação da API em
