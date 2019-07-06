@@ -1,0 +1,37 @@
+.content__post {
+
+  ul {
+    li {
+      @extend .texto;
+      margin-bottom: 1rem;
+    }
+  }
+  img {
+    transition: transform .2s; /* Animation */
+    width: 100%;
+
+    grid-column: 1 / -1;
+    margin: 20px 0;
+
+
+    &:hover {
+      width: 100%;
+      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+
+    p {
+      display: inline;
+      font-family: 'Roboto Mono', sans-serif;
+      color: #737070;
+      font-style: italic;
+      font-size: 23px;
+    }
+  }
+}
