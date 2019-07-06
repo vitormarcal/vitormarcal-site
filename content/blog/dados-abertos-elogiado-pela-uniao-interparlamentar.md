@@ -13,7 +13,7 @@ tags:
 
 A organização tem sede em Genebra, na Suíça, e tem como objetivo mediar contatos multilaterais dos parlamentos. Dentre vários destaques,  que <a href="https://www.ipu.org/open-data-availability-not-enough-marketing-strategy-brazilian-chamber-deputies" title="Página da União Interparlamentar, link da notícia" target="_blank" rel="noopener noreferrer">a publicação </a> comentou:
 
->“Vários parlamentos fizeram grandes investimentos nos últimos anos para disponibilizar ao público informações parlamentares em formatos de dados abertos, para aumentar a transparência e facilitar a participação do público. No entanto, o uso dos dados abertos tem sido frequentemente limitado. A Câmara dos Deputados do Brasil decidiu, portanto, estabelecer uma estratégia de marketing para aumentar e diversificar o uso de seus dados parlamentares.”
+>Vários parlamentos fizeram grandes investimentos nos últimos anos para disponibilizar ao público informações parlamentares em formatos de dados abertos, para aumentar a transparência e facilitar a participação do público. No entanto, o uso dos dados abertos tem sido frequentemente limitado. A Câmara dos Deputados do Brasil decidiu, portanto, estabelecer uma estratégia de marketing para aumentar e diversificar o uso de seus dados parlamentares.
 
 ## Sobre os Dados Abertos
 
@@ -22,7 +22,6 @@ Segundo a <a href="https://dadosbaertos.camara.leg.br/" title="Portal dos Dados 
 O novo portal tem a filosofia de ser acessível às pessoas não técnicas, leiam-se não programadores. Os dados são disponibilizados em diversos formatos:
   
   * através de uma Restful API com respostas em JSON OU XML
-  
   * através de conjuntos de arquivos pré-gerados, prontos para serem baixados, nos formatos XLSX (Microsoft Excel), ODS (OpenOffice / LibreOffice Calc) e CSV, além de XML e JSON
 
 Com essas informações, muita gente tem feito trabalhos bem legais como: 
@@ -36,7 +35,7 @@ As possibilidades de uso desses dados são infinitas e com certeza alguém em al
 
 ## Meu papel no desenvolvimento dos Dados Abertos
 
-Integrei a equipe de dados abertos em março de 2018 até meados de junho de 2019, período em que tive a honra de ser o <em>único programador atuante no time</em>! Eventualmente, ainda presto alguns serviços a**** equipe, mas meu foco agora está em outro setor da Câmara em busca de algumas desnormalizações e otimizações da entrega de dados (que impactam diretamente os Dados Abertos).
+Integrei a equipe de dados abertos em março de 2018 até meados de junho de 2019, período em que tive a honra de ser o <em>único programador atuante no time</em>! Eventualmente, ainda presto alguns serviços a equipe, mas meu foco agora está em outro setor da Câmara em busca de algumas desnormalizações e otimizações da entrega de dados (que impactam diretamente os Dados Abertos).
 Durante esse período trabalhei, principalmente, com análises em diversas bases de dados em busca de entregar novos dados da melhor forma possível para o usuário: de acordo com a filosofia dos Dados Abertos, <em>não basta dar transparência aos dados, deve ser necessário que estes dados façam sentido para o cidadão</em>.
 
 Com toda certeza, esse foi um período de grande desafio e crescimento profissional. 
@@ -46,7 +45,7 @@ Nesse período fiz várias otimizações na API, nas queries, substitui procedur
 Dentre serviços críticos que ameaçavam a saúde da API, um serviço rest que informava o histórico de reuniões de um deputado. Como apontado por um usuário, a resposta deste serviço era muito demorada, apresentando timeouts frequentes.
 Uma trabalhosa análise dos registros resultou em um belo trabalho de tunning que fez o serviço responder de picos de 50 segundos para alguns milissegundos. O mesmo para serviços mais requisitados como o de proposições, deputados, autores, etc.
 
-Nesse tempo, fui responsável por algo inédito na busca da Câmara dos Deputados: implementei a informação de membros de um partido dado tal período. Pode verificar, em nenhum lugar nos portais da Câmara, que não seja no serviço <code>/partidos/{id}/membros </code> da API existe essa informação (até a data de escrita deste post).
+Nesse tempo, fui responsável por algo inédito na busca da Câmara dos Deputados: implementei a informação de membros de um partido dado tal período. Pode verificar, em nenhum lugar nos portais da Câmara, que não seja no serviço **/partidos/{id}/membros** da API existe essa informação (até a data de escrita deste post).
 
 Algo que realmente adorei desenvolver foi a nova arquitetura de geração de arquivos dos Dados Abertos. Até minha chegada a geração era
 via uma ferramenta ETL (Extract, Transform, Load) chamada Pentaho. Cheguei a desenvolver alguns jobs nessa ferrmenta para os Dados Abertos, mas logo vi que, considerando o que desejávamos para o Portal de Dados Abertos, ela não era a ferramenta ideal. Então, criei uma ferramenta de ETL em Java, totalmente extensível a mudanças. O melhor foi que jobs que executavam no Pentaho em 50 minutos passaram a serem executados pela nova ferramenta em 3 minutos. Para quem tenha ficado cético sobre eu ter substituído uma ferramenta ETL especialista de mercado por uma solução própria, já adianto que existe uma boa discussão na comunidade sobre ETL como ferramenta contra hand code (mãos na massa, produzida sob demanda). Todavia, este é assunto para outro post.
