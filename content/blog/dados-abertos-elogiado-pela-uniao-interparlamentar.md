@@ -37,14 +37,14 @@ As possibilidades de uso desse tipo de dados são infinitas e concerteza alguém
 ## Meu papel no desenvolvimento do Dados Abertos
 
 Integrei a equipe de dados abertos em Março de 2018 até meados de Junho de 2019, período em que tive a honra de ser o <em>único programador atuante na equipe</em>! Eventualmente ainda presto alguns serviços à equipe mas meu foco agora está em outro setor da Câmara em busca de algumas desnormalizações de dados e otimizações de alguns serviços (que impactam diretamente o dados abertos).
-Durante esse período trabalhei principalmente com análises em diversos databases em busca de entregar novos dados da melhor forma possível para o usuário: de acordo com a filosofia do Dados Abertos, <em>não basta dar transparência aos dados, é necessário que estes dados façam sentido para o cidadão</em>.
+Durante esse período trabalhei, principalmente, com análises em diversos databases em busca de entregar novos dados da melhor forma possível para o usuário: de acordo com a filosofia do Dados Abertos, <em>não basta dar transparência aos dados, é necessário que estes dados façam sentido para o cidadão</em>.
 
 Com toda certeza, essse foi um período de grande desafio e crescimento profissional. 
 Tenho muito orgulho de dizer que contribui positivamente para esse projeto, que não tem fins lucrativos mas sim objetivos sociais.
-Nesse período de tempo fiz várias otimizações na API, nas queries, subsititui procedures com baixo desempenho etv.
+Nesse período de tempo fiz várias otimizações na API, nas queries, subsititui procedures com baixo desempenho etc.
 
 Dentre serviços críticos que ameaçavam a saúde da API,um serviço rest que informava o histórico de reuniões de um deputado. Como apontado por um usuário, a resposta deste serviço era muito demorada, apresentando timeouts frequentes.
-Uma trabalhosa análise dos registros resultou em um belo belo trabalho de tunning que fez o serviço responder de picos de 50 segundos para alguns milisegundos. O mesmo para serviços mais requisitados como o de proposições, deputados ...
+Uma trabalhosa análise dos registros resultou em um belo trabalho de tunning que fez o serviço responder de picos de 50 segundos para alguns milisegundos. O mesmo para serviços mais requisitados como o de proposições, deputados ...
 
 Nesse período, fui responsável por algo inédito na busca da Câmara dos Deputados: implementei a busca de membros de um partido dado tal período de tempo. Pode verificar, em nenhum lugar, que não seja no serviço <code>/partidos/{id}/membros </code> da API existe essa informação (até a data de escrita deste post).
 
