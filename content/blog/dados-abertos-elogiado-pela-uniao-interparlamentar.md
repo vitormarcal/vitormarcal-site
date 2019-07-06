@@ -11,13 +11,13 @@ tags:
   - etl tools
 ---
 
-A organização tem sede em Genebra, na Suíça, e tem como objetivo mediar contatos multilaterais dos parlamentos. Dentre vários destaques,  que <a href="https://www.ipu.org/open-data-availability-not-enough-marketing-strategy-brazilian-chamber-deputies" target="_blank" rel="noopener noreferrer">a publicação </a> comentou:
+A organização tem sede em Genebra, na Suíça, e tem como objetivo mediar contatos multilaterais dos parlamentos. Dentre vários destaques,  que <a href="https://www.ipu.org/open-data-availability-not-enough-marketing-strategy-brazilian-chamber-deputies" title="Página da União Interparlamentar, link da notícia" target="_blank" rel="noopener noreferrer">a publicação </a> comentou:
 
 >"Vários parlamentos fizeram grandes investimentos nos últimos anos para disponibilizar ao público informações parlamentares em formatos de dados abertos, para aumentar a transparência e facilitar a participação do público. No entanto, o uso dos dados abertos tem sido freqüentemente limitado. A Câmara dos Deputados do Brasil decidiu, portanto, estabelecer uma estratégia de marketing para aumentar e diversificar o uso de seus dados parlamentares."
 
 ## Sobre o Dados Abertos
 
-Segundo a <a href="https://dadosbaertos.camara.leg.br/" target="_blank" rel="noopener noreferrer">página oficial do Dados Abertos da Câmara </a>, o portal pode ser utilizado para acompanhar a tramitação e as votações de projetos e pareceres, verificar a atuação e os gastos do deputado que a sociedade ajudou a eleger, descobrir os eventos realizados pelas comissões, e muito mais!
+Segundo a <a href="https://dadosbaertos.camara.leg.br/" title="Portal do Dados Abertos da Câmara dos Deputados" target="_blank" rel="noopener noreferrer">página oficial do Dados Abertos da Câmara </a>, o portal pode ser utilizado para acompanhar a tramitação e as votações de projetos e pareceres, verificar a atuação e os gastos do deputado que a sociedade ajudou a eleger, descobrir os eventos realizados pelas comissões, e muito mais!
 
 O novo portal têm a filosofia de ser acessível à pessoas não técnicas, leia-se não programadores. Os dados são disponibilizados em diversos formatos:
   
@@ -53,9 +53,9 @@ via uma ferramenta ETL (Extract, Transform, Load) chamada Pentaho. Cheguei a faz
 
 ## Como obter os dados dísponiveis
 
-Você pode verificar a <a href="https://dadosbaertos.camara.leg.br/swagger/api.html" target="_blank" rel="noopener noreferrer">página da documentação da API</a>. Lá contém todas as relações com os recursos (dados) abertos à sociedade. 
+Você pode verificar a <a href="https://dadosbaertos.camara.leg.br/swagger/api.html" title="Página da documentação da API do Dados Abertos" target="_blank" rel="noopener noreferrer">página da documentação da API</a>. Lá contém todas as relações com os recursos (dados) abertos à sociedade. 
 
-Na área da Api Restful, você pode inclusive testar as chamadas na própria página, verficar quais dados retornam, como funciona o esquema de paginação e links, os filtros permitidos etc. <strong>Atenção!</strong> Essa é uma página de documentação com o próposito de ser uma interface simples e intuitiva para que usuários possam descobrir e testar a Api. Você não precisa depender dela para construir suas aplicações. Digo isto, por que ao conversar com alguns representantes de um certo partido, percebi que eles assimilaram a página erroneamente: achavam que ela era um sistema, o próprio Dados Abertos. Pelo contrário! É apenas uma documentação intuitiva. Você pode fazer suas chamadas copiando a url no seu navegador, por exemplo, a seguinte url retorna os dados da PEC 300: <a href="https://dadosabertos.camara.leg.br/api/v2/proposicoes/2121866 " target="_blank" rel="noopener noreferrer">https://dadosabertos.camara.leg.br/api/v2/proposicoes/2121866 </a>.
+Na área da Api Restful, você pode inclusive testar as chamadas na própria página, verficar quais dados retornam, como funciona o esquema de paginação e links, os filtros permitidos etc. <strong>Atenção!</strong> Essa é uma página de documentação com o próposito de ser uma interface simples e intuitiva para que usuários possam descobrir e testar a Api. Você não precisa depender dela para construir suas aplicações. Digo isto, por que ao conversar com alguns representantes de um certo partido, percebi que eles assimilaram a página erroneamente: achavam que ela era um sistema, o próprio Dados Abertos. Pelo contrário! É apenas uma documentação intuitiva. Você pode fazer suas chamadas copiando a url no seu navegador, por exemplo, a seguinte url retorna os dados da PEC 300: <a href="https://dadosabertos.camara.leg.br/api/v2/proposicoes/2121866" title="PEC 300" target="_blank" rel="noopener noreferrer">https://dadosabertos.camara.leg.br/api/v2/proposicoes/2121866 </a>.
 
 Na área de arquivos, você pode baixar os conjuntos de dados no seu formato preferido. Ideal para quem precisa fazer carga de dados!
 
