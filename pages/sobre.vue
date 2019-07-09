@@ -9,7 +9,7 @@
 <script>
 
   export default {
-    name: "Sobre",
+    name: "sobre",
     layout: 'UnderConstruction',
   }
 </script>
