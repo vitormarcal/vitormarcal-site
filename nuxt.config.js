@@ -43,7 +43,7 @@ export default {
       {name: 'googlebot', content: 'index,follow'},
       {name: 'robots', content: 'index,follow,noodp'},
       {name: 'revisit-after', content: '7 days'},
-      {name: 'application-name', content: pkg.title },
+      {name: 'application-name', content: pkg.title},
       {hid: 'author', name: 'author', content: pkg.author},
       {hid: 'description', name: 'description', content: pkg.description},
       {hid: 'keywords', name: 'keywords', content: 'web development, programmer, Vítor Marçal'}
@@ -95,7 +95,10 @@ export default {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
-        include: path.resolve(__dirname, 'content/blog'),
+        include: [
+          path.resolve(__dirname, 'content/blog')
+          , path.resolve(__dirname, 'content/pages')
+        ],
         options: {
           vue: {
             root: "dynamicMarkdown"
