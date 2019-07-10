@@ -1,10 +1,10 @@
 <template>
 
-  <main>
-    <div v-html="whoiam"></div>
-    <div v-html="professionalHistory"></div>
-    <div v-html="whatIdoToday"></div>
-  </main>
+  <div class="container">
+    <section v-html="whoiam"></section>
+    <section v-html="professionalHistory"></section>
+    <section v-html="whatIdoToday"></section>
+  </div>
 
 
 </template>
@@ -25,6 +25,13 @@
 </script>
 
 <style scoped lang="scss">
+
+  div {
+    section {
+      @extend .content
+    }
+  }
+
 
 
 </style>

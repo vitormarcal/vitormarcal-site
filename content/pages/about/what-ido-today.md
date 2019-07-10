@@ -1,6 +1,6 @@
 # O que eu faço hoje
 
-Sou Desenvolvedor Sênio na Câmara dos Deputados e um projeto muito legal que participo é o Dados Abertos, que é muito importante para a sociedade civil como um todo.
+Sou Desenvolvedor Sênior na Câmara dos Deputados e um projeto muito legal que participo é o Dados Abertos, que é muito importante para a sociedade civil como um todo.
 Muitos projetos legais da sociedade foram viabilizados pelo Dados Abertos.
 Já falei um pouco sobre ele <a href="/blog/dados-abertos-elogiado-pela-uniao-interparlamentar" title="Post no meu blog sobre o Dados Abertos" target="_blank" rel="noopener noreferrer">neste post</a>
 
