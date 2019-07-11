@@ -5,7 +5,7 @@
 <script>
   export default {
     name: "contato",
-    layout: 'UnderConstruction',
+    layout: 'under-construction',
   }
 </script>
 
