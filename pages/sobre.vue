@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div class="about">
     <section v-html="whoiam"></section>
     <section v-html="professionalHistory"></section>
     <section v-html="whatIdoToday"></section>
