@@ -53,7 +53,11 @@
     }
 
     @media (min-width: 1201px) {
-      margin: 8rem 20rem 20rem;
+      margin: 8rem 16rem 16rem;
+    }
+
+    @media (min-width: 1764px) {
+      margin: 8rem 30rem 30rem;
     }
   }
 
