@@ -47,6 +47,33 @@ ul {
 
 }
 
-.under-construction {
+// background-colors
+.bg-color__under-construction {
   background-color: #fcfefc
 }
+
+.bg-color__about {
+  background-color: #f6f7fe;
+
+  main {
+    background-color: #f6f7fe
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+  }
+  p {
+    font-family: 'Roboto Mono', sans-serif;
+  }
+
+  @media (max-width: 765px) {
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 33px;
+    }
+    p {
+      font-family: 'Roboto Mono', sans-serif;
+      font-size: 18px
+    }
+  }
+}
+

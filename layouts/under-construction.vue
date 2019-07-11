@@ -21,7 +21,7 @@
     },
     head: {
       bodyAttrs: {
-        class: "under-construction"
+        class: "bg-color__under-construction"
       }
     }
 
