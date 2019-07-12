@@ -1,29 +1,31 @@
 <template>
   <header>
-    <brand/>
-    <nav-bar/>
+    <c-brand/>
+    <c-nav-bar/>
 
   </header>
-    
+
 </template>
 
 <script>
-    import NavBar from "./NavBar";
-    import Brand from "./Brand";
-    export default {
-      components: {Brand, NavBar}
+
+  export default {
+    components: {
+      CBrand: () => import('./Brand'),
+      CNavBar: () => import('./NavBar'),
     }
+  }
 </script>
 
 <style scoped lang="scss">
 
   header {
-    background-color: white;
+    background-color: #f6f7fe;
     position: fixed;
     min-height: 80px;
     width: 100%;
     z-index: 1000;
-    border-bottom: .0625rem solid rgba(0,0,0,.05);
+    border-bottom: .0625rem solid rgba(0, 0, 0, .05);
     text-align: center;
     display: flex;
     align-items: center;
@@ -31,10 +33,10 @@
     padding: .2375rem 2.5rem;
     top: 0;
 
-    @media (max-width: 720px)  {
+    @media (max-width: 720px) {
       display: block;
     }
-    
+
 
   }
 

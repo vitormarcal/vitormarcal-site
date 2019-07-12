@@ -38,6 +38,7 @@
     border: 1px solid #ffffff;
     box-shadow: 1px 1px 1px 1px $blue-light;
     margin-bottom: 2rem;
+    background-color: #f6f7fe3d;
 
     h3 {
       font-size: 25px;

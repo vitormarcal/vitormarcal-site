@@ -34,10 +34,6 @@
     @extend .container;
     margin: 8rem 4rem 4rem;
     padding-top: 0;
-    background-color: #fff;
-    border: 0 solid rgba(0, 0, 0, .125);
-    border-radius: .625rem;
-    box-shadow: 0 2px 3px 0 rgba(75, 91, 108, .2);
 
     section {
       @extend .content;
