@@ -1,7 +1,7 @@
 <template>
 
   <section class="container">
-    <nuxt-child />
+    <nuxt-child/>
 
     <div class="content">
       <header class="content__title">
@@ -39,6 +39,11 @@
 
 <style scoped lang="scss">
 
+  .container {
+    margin: 1rem;
+    padding-bottom: 2px;
+  }
+
   .content {
     .content__title {
       /*border-bottom: 1px solid #ececea;*/
@@ -57,6 +62,9 @@
 
     .content__articles {
       margin-top: 2rem;
+     &:last-child {
+       padding-bottom: 0.5px;
+     }
     }
   }
 
