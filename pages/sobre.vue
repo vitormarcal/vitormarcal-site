@@ -37,7 +37,9 @@
 
     section {
       @extend .content;
-      padding-top: 0;
+      padding-top: 1px;
+      margin-bottom: 1.8rem;
+      padding-bottom: 1px;
     }
 
     @media (max-width: 765px) {
