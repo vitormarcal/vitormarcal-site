@@ -55,4 +55,8 @@
 </script>
 
 <style scoped lang="scss">
+
+  .container {
+    margin: 1rem;
+  }
 </style>
