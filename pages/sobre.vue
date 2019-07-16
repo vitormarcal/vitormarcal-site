@@ -1,19 +1,24 @@
 <template>
 
-  <div class="about">
+  <main class="about">
     <section>
       <figure>
         <img src="~/assets/images/vtormarcal.svg" alt="Vítor Marçal, minha imagem de perfil"/>
         <a href="https://drive.google.com/file/d/0B1bMwtDGQtzseGU3WjJSR2VzWUNkMGhON0Rva1V4YmJyYmQ4/view"
            target="_blank" rel="noopener noreferrer" title="meu currículo vitae">Visualize meu currículo formal</a>
-        <figcaption><em>By day, a simple software developer.<br/> By night, also a software developer.</em><br/>&#127773;&#127770;&#128187;
+        <figcaption>
+          <em>By day, a simple software developer.<br/> By night, also a software developer.</em>
+          <br/>
+          <div class="emoji">
+            <span>&#127773;</span><span>&#127770;</span><span>&#128187;</span>
+          </div>
         </figcaption>
       </figure>
     </section>
     <section v-html="whoiam"></section>
     <section v-html="professionalHistory"></section>
     <section v-html="whatIdoToday"></section>
-  </div>
+  </main>
 
 </template>
 
@@ -34,7 +39,7 @@
 
 <style scoped lang="scss">
 
-  div {
+  .about {
     @extend .container;
     margin: 8rem 4rem 4rem;
     padding-top: 0;
@@ -68,6 +73,10 @@
 
         figcaption {
           text-align: center;
+
+          .emoji {
+            font-size: 18px;
+          }
         }
 
         a {
