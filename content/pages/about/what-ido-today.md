@@ -2,7 +2,7 @@
 
 Sou Desenvolvedor Sênior na Câmara dos Deputados e um projeto muito legal que participo é o Portal de Dados Abertos, que é muito importante para a sociedade civil na totalidade.
 Muitos projetos legais da sociedade foram viabilizados pelos Dados Abertos.
-Já falei um pouco sobre ele <a href="/blog/dados-abertos-elogiado-pela-uniao-interparlamentar" title="Post no meu blog sobre o Dados Abertos" target="_blank" rel="noopener noreferrer">neste post</a>
+Já falei um pouco sobre ele <a href="/blog/dados-abertos-elogiado-pela-uniao-interparlamentar" title="Post no meu blog sobre o Dados Abertos" target="_blank" rel="noopener noreferrer">neste post</a>.
 
 Atualmente, trabalho com algumas desnormalizações de dados, utilizando o ElasticSearch e otimizações de serviços Rests que alimentam as páginas da Câmara.
 
