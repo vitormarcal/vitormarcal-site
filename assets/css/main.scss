@@ -20,7 +20,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100%;
-  background-color: #f6f7fe;
+  background-color: $bg-color;
 }
 
 
@@ -57,10 +57,10 @@ ul {
 }
 
 .bg-color__about {
-  background-color: #f6f7fe;
+  background-color: $bg-color;
 
   main {
-    background-color: #f6f7fe
+    background-color: $bg-color;
   }
   h1 {
     font-family: 'Roboto', sans-serif;
