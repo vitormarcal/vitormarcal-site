@@ -5,7 +5,7 @@
       <figure>
         <img src="~/assets/images/vtormarcal.svg" alt="Vítor Marçal, minha imagem de perfil"/>
         <a href="https://drive.google.com/file/d/0B1bMwtDGQtzseGU3WjJSR2VzWUNkMGhON0Rva1V4YmJyYmQ4/view"
-           target="_blank" rel="noopener noreferrer" title="meu currículo vitae">Baixe meu currículo formal</a>
+           target="_blank" rel="noopener noreferrer" title="meu currículo vitae">Visualize meu currículo formal</a>
         <figcaption><em>By day, a simple software developer.<br/> By night, also a software developer.</em><br/>&#127773;&#127770;&#128187;
         </figcaption>
       </figure>
