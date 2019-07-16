@@ -1,6 +1,6 @@
 <template>
 
-  <main class="about">
+  <div class="about">
     <section>
       <figure>
         <img src="~/assets/images/vtormarcal.svg" alt="Vítor Marçal, minha imagem de perfil"/>
@@ -18,7 +18,7 @@
     <section v-html="whoiam"></section>
     <section v-html="professionalHistory"></section>
     <section v-html="whatIdoToday"></section>
-  </main>
+  </div>
 
 </template>
 
