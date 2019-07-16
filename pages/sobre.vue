@@ -51,15 +51,18 @@
       padding-bottom: 1px;
 
       &:first-of-type {
-        box-shadow: none;
-        background-color: $bg-color;
         max-width: 400px;
+        background-color: #fff;
+        border: 0 solid rgba(0, 0, 0, .125);
+        border-radius: .625rem;
+        box-shadow: 0 2px 3px 0 rgba(75, 91, 108, .2);
       }
 
       figure {
         align-content: center;
         img {
           width: 100%;
+          padding-top: 2px;
         }
         figcaption {
           text-align: center;
