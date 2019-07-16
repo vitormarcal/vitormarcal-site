@@ -56,28 +56,3 @@ ul {
   background-color: #fcfefc
 }
 
-.bg-color__about {
-  background-color: $bg-color;
-
-  main {
-    background-color: $bg-color;
-  }
-  h1 {
-    font-family: 'Roboto', sans-serif;
-  }
-  p {
-    font-family: 'Roboto Mono', sans-serif;
-  }
-
-  @media (max-width: 765px) {
-    h1 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 33px;
-    }
-    p {
-      font-family: 'Roboto Mono', sans-serif;
-      font-size: 18px
-    }
-  }
-}
-

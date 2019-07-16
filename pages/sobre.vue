@@ -28,11 +28,6 @@
       whoiam: () => whoiam.html,
       whatIdoToday: () => whatIdoToday.html,
       professionalHistory: () => professionalHistory.html
-    },
-    head: {
-      bodyAttrs: {
-        class: "bg-color__about"
-      }
     }
   }
 </script>
@@ -61,14 +56,13 @@
         padding-top: 1rem;
       }
 
-      &:nth-of-type(2) {
-      }
-
       figure {
         align-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
 
         img {
-          width: 100%;
           padding-top: 2px;
         }
 
