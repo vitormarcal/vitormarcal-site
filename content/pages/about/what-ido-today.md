@@ -6,5 +6,5 @@ Já falei um pouco sobre ele <a href="/blog/dados-abertos-elogiado-pela-uniao-in
 
 Atualmente, trabalho com algumas desnormalizações de dados, utilizando o ElasticSearch e otimizações de serviços Rests que alimentam as páginas da Câmara.
 
-Como passatempo, estou criando este site totalmente headless, sem bootstrap, materialize (ou algo do tipo) e feito com muito amor  com Vue.js, Nuxt.js e Markdown <3.
+Como passatempo, estou criando este site totalmente headless, sem bootstrap, materialize (ou algo do tipo) e feito com muito amor  com Vue.js, Nuxt.js e Markdown &#128151;.
 De vez enquando sobra um tempinho para ler meus quadrinhos e escrever em <a href="/blog" title="Página do meu blog" target="_blank" rel="noopener noreferrer">meu blog</a>. &#128523;
