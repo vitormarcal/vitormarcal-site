@@ -1,0 +1,207 @@
+{
+  "nome": "Vítor Marçal",
+  "email": "vitormarcal8@gmail.com",
+  "endereco": "Expansão do Setor O, Ceilândia Norte",
+  "municipio": "Brasília",
+  "uf": "DF",
+  "telefone": "(61) 9 95117545",
+  "site": "http://www.vitormarcal.com.br",
+  "sobre": "http://www.vitormarcal.com.br/sobre",
+  "curriculo": "http://www.vitormarcal.com.br/curriculo",
+  "linkedin": "https://www.linkedin.com/in/vitormarcal",
+  "github": "https://github.com/vitormarcal",
+  "formacao": [
+    {
+      "curso": "Análise e Desenvolvimento de Sistemas",
+      "livre": false,
+      "concluídoEm": 2015,
+      "local": "Universidade Católica de Brasília"
+    },
+    {
+      "curso": "Programa de Treinamento Hackathon Stefanini",
+      "livre": true,
+      "carga": "40h",
+      "local": "Stefanini IT Solutions",
+      "topicos": [
+        "Java Básico: Swing e Maven",
+        "Java Web: SOA e Rest",
+        "Java web II: Jboss e Hibernate",
+        "Scrum",
+        "Javascript",
+        "AngularJS"
+      ]
+    },
+    {
+      "curso": "Programação Java e Desenvolvimento Java",
+      "livre": true,
+      "local": "Instituto Tecnológico da Aeronáutica & Coursera",
+      "topicos": [
+        "Orientação a Objetos com Java",
+        "Test Driven Development (TDD)",
+        "Desenvolvimento Ágil com Java Avançado"
+      ]
+    },
+    {
+      "curso": "Full Stack Web Development",
+      "livre": true,
+      "local": "The Hong Kong University of Science and Technology & Coursera",
+      "topicos": [
+        "HTML, CSS and Javascript",
+        "Front-End Web UI Frameworks and Tools"
+      ]
+    },
+    {
+      "curso": "Cursos variados na Udemy",
+      "livre": true,
+      "local": "Udemy",
+      "tópicos": [
+        "Banco de Dados Relacionais",
+        "Banco de Dados Não-Relacionais",
+        "Node",
+        "Ruby On Rails",
+        "Spring Framework"
+      ]
+    }
+  ],
+  "experiencia": [
+    {
+      "cod": 5,
+      "relacionaExperiencia": 4,
+      "empresa": "BS Tecnologia",
+      "local": "Brasília, DF",
+      "titulo": [
+        {
+          "periodo": "Janeiro de 2018 - Atualmente",
+          "cargo": "Desenvolvedor Sênior"
+        }
+      ],
+      "clientes": [
+        "Câmara dos Deputados"
+      ],
+      "decricao": "Atualmente trabalho com muito desenvolvimento com Java e Node, otimizações de serviços rest, de consultas ao banco de dados, desnormalizações com ElasticSearch. Tive um pouco de experiência com proxy, nginx e algumas libs de gateway api. Na maior parte do tempo, tenho tarefas de analise e desenvolvimento para diminuir a sobrecarga em bancos relacionais e aumentar o tempo de resposta dos serviços rest da Câmara.",
+      "itensGerais": [
+        "Vue.js",
+        "Node.js",
+        "Java",
+        "Sql Server",
+        "ElasticSearch",
+        "Muita análise de banco de dados!",
+        "Desnormalizações de dados",
+        "Rancher",
+        "Jenkins"
+      ]
+    },
+    {
+      "cod": 4,
+      "empresa": "Plansul Planejamento e Consultoria",
+      "local": "Brasília, DF",
+      "titulo": [
+        {
+          "periodo": "Março de 2018 - Julho de 2018",
+          "cargo": "Desenvolvedor Pleno"
+        },
+        {
+          "periodo": "Julho de 2018 - Dezembro de 2018",
+          "cargo": "Desenvolvedor Sênior"
+        }
+      ],
+      "clientes": [
+        "Câmara dos Deputados"
+      ],
+      "decricao": "Desenvolvedor no back-end com Java e NodeJS em diversos projetos.Entre vários projetos que passei, destaque para o Portal de Dados Abertos da Câmara e a Busca do Portal da Câmara.\nO Portal de Dados Abertos é uma API restful aberta a sociedade, com tecnologias Java e Node.\nAtuando no Portal de Dados Abertos, trabalhei com muita análise e tuning de consultas SQL, procedures e views.\nAnalisei constantemente o banco de dados, em Sql Server, para criar novas funcionalidades para o Portal de Dados Abertos.\nTrabalhei com refatoração do código legado do projeto, para que ficasse melhor mantivel e que a API se comportasse de acordo com os padrões Restfull.\nMigrei jobs ETL do Pentaho para código Java, onde consegui um ganho de desempenho de 30 a 50 min para 3 a 10 min de execução dos jobs.\nNa Busca do Portal da Câmara, migramos para uma arquiteura em Micro Serviços, ultilizando tecnologias como Java, Node, ElasticSearch e conteineres docker.",
+      "itensGerais": [
+        "Vue.js",
+        "Node.js",
+        "Java",
+        "Geração de PDF, XML, JSON, CSV, ODS, XSLX",
+        "Sql Server",
+        "ElasticSearch",
+        "Oracle",
+        "Muita análise de banco de dados!",
+        "Docker",
+        "Rancher",
+        "Jenkins"
+      ]
+    },
+    {
+      "cod": 3,
+      "empresa": "EIG Mercados",
+      "local": "Brasília, DF",
+      "titulo": [
+        {
+          "periodo": "Fevereiro de 2018 - Março de 2018",
+          "cargo": "Desenvolvedor Pleno"
+        }
+      ],
+      "clientes": [
+        "Detran (Vários Estados)"
+      ],
+      "decricao": "Empresa que presta serviço de digitalização de documentos para o Detran de diversos estados.\nNesse breve período fiz uma integração a o web service do Detran do Amapá.",
+      "itensGerais": [
+        "Java",
+        "JQuery",
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "cod": 2,
+      "empresa": "AIS Digital",
+      "local": "Brasília, DF",
+      "titulo": [
+        {
+          "periodo": "Maio de 2017 - Fevereiro de 2018",
+          "cargo": "Desenvolvedor Web"
+        }
+      ],
+      "clientes": [
+        "Caixa Seguradora",
+        "Maqplan",
+        "Wayupay"
+      ],
+      "decricao": "Desenvolvimento com Java, Ruby e Node. O Principal projeto que participei foi o Portal Vida PJ da Caixa Seguradora. Com uma arquitetura rest, construímos um sistema de cotação de seguros para pessoa jurídica, PJ. No Portal PJ, atuei no back-end e no front-end.No back-end trabalhei meus conhecimentos em Java, Spring Framework no geral, banco de dados, autenticação e autorização etc. No front-end trabalhei principalmente com AngularJS. No projeto da MaqPlan, participei de um projeto com a stack monolítica Ruby on Rails. O projeto consistia em integrações com a SEFAZ (impressão de notas fiscais, em resumo). No Wayupay, uma nova plataforma de pagamentos, assumi o backend em Node.js. Nesse periodo fui responsável por gerenciar o banco de dados (em Mongodb) e modelar e desenvolver as APIs necessárias para o funcionamento do backoffice e aplicativos móveis. Durante o periodo que atuei no projeto, iniciei o backoffice feito em Vue.js.",
+      "itensGerais": [
+        "Desenvolvimento Back-end e Front-end",
+        "Vue.js",
+        "AngularJS",
+        "Java 8",
+        "Spring Framework",
+        "Spring Boot",
+        "Oracle",
+        "DB2",
+        "Node.js",
+        "Restfull API",
+        "Swagger",
+        "Integrações a Web Services",
+        "AngularJS"
+      ]
+    },
+    {
+      "cod": 1,
+      "empresa": "Stefanini IT Solutions",
+      "local": "Brasília, DF",
+      "titulo": [
+        {
+          "periodo": "Setembro de 2016 - Maio de 2017",
+          "cargo": "Desenvolvedor Java"
+        }
+      ],
+      "clientes": [
+        "Empresa Brasileira de Correios, ECT"
+      ],
+      "decricao": "Desenvolvimento Java no Sistema de Gestão de Preços e Benfícios.\nAtuei tanto no back-end quanto no front-end ultilizando o ecossistema java em uma arquitetura monolitica. Importante sistema estratégico e financeiro para os Correios, tive a oportunidade de ganhar experiência com cálculos financeiros e estatisticos.\nTive experiência com o metodos de desenvolvimento Ágil SCRUM , onde participei de reuniões de planejamento de  sprint, dayls, sprint review e a própria spring.",
+      "itensGerais": [
+        "Testes unitários com Junit e Arquillian.",
+        "Componentes JSF com Primefaces",
+        "JPA com Hibernate",
+        "Ireports",
+        "BD Oracle",
+        "Chatt.js",
+        "Maven",
+        "Relatórios",
+        "Cálculos estátisticos e financeiros"
+      ]
+    }
+  ]
+}
