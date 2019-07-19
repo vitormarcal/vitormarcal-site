@@ -1,19 +1,23 @@
 {
   "nome": "Vítor Marçal",
-  "email": "vitormarcal8@gmail.com",
-  "endereco": "Expansão do Setor O, Ceilândia Norte",
-  "municipio": "Brasília",
-  "uf": "DF",
-  "telefone": "(61) 9 95117545",
-  "site": "http://www.vitormarcal.com.br",
-  "sobre": "http://www.vitormarcal.com.br/sobre",
-  "curriculo": "http://www.vitormarcal.com.br/curriculo",
-  "linkedin": "https://www.linkedin.com/in/vitormarcal",
-  "github": "https://github.com/vitormarcal",
+  "titulos": "Desenvolvedor Sênior",
+  "contato": {
+    "email": "vitormarcal8@gmail.com",
+    "endereco": "Expansão do Setor O, Ceilândia Norte",
+    "municipio": "Brasília",
+    "uf": "DF",
+    "telefone": "(61) 9 95117545",
+    "site": "http://www.vitormarcal.com.br",
+    "sobre": "http://www.vitormarcal.com.br/sobre",
+    "curriculo": "http://www.vitormarcal.com.br/curriculo",
+    "linkedin": "https://www.linkedin.com/in/vitormarcal",
+    "github": "https://github.com/vitormarcal"
+  },
   "formacao": [
     {
       "curso": "Análise e Desenvolvimento de Sistemas",
       "livre": false,
+      "descricao": "//TODO",
       "concluídoEm": 2015,
       "local": "Universidade Católica de Brasília"
     },
@@ -63,13 +67,13 @@
       ]
     }
   ],
-  "experiencia": [
+  "experiencias": [
     {
       "cod": 5,
       "relacionaExperiencia": 4,
       "empresa": "BS Tecnologia",
       "local": "Brasília, DF",
-      "titulo": [
+      "titulos": [
         {
           "periodo": "Janeiro de 2018 - Atualmente",
           "cargo": "Desenvolvedor Sênior"
@@ -95,7 +99,7 @@
       "cod": 4,
       "empresa": "Plansul Planejamento e Consultoria",
       "local": "Brasília, DF",
-      "titulo": [
+      "titulos": [
         {
           "periodo": "Março de 2018 - Julho de 2018",
           "cargo": "Desenvolvedor Pleno"
@@ -127,7 +131,7 @@
       "cod": 3,
       "empresa": "EIG Mercados",
       "local": "Brasília, DF",
-      "titulo": [
+      "titulos": [
         {
           "periodo": "Fevereiro de 2018 - Março de 2018",
           "cargo": "Desenvolvedor Pleno"
@@ -149,7 +153,7 @@
       "cod": 2,
       "empresa": "AIS Digital",
       "local": "Brasília, DF",
-      "titulo": [
+      "titulos": [
         {
           "periodo": "Maio de 2017 - Fevereiro de 2018",
           "cargo": "Desenvolvedor Web"
@@ -181,7 +185,7 @@
       "cod": 1,
       "empresa": "Stefanini IT Solutions",
       "local": "Brasília, DF",
-      "titulo": [
+      "titulos": [
         {
           "periodo": "Setembro de 2016 - Maio de 2017",
           "cargo": "Desenvolvedor Java"
