@@ -12,6 +12,8 @@ tags:
 ---
 ## O começo
 
+_Spoiler Alert: realizei a prova dia 08 de Agosto, com sucesso!_ &#128540;
+
 Passar por N empresas que não exigiam ou reconhecia certificados como prova prática de capacidade, a necessidade urgente de estudar temas com relevância maior em minha rotina de trabalho, a perigosa procrastinação...
 
 Foram diversos os motivos que contribuiram para que eu deixasse em segundo plano o assunto *Certificação Java SE 8 IZO-808*.
@@ -23,125 +25,142 @@ Dia 24 de Julho fica estipulada como a data em que farei a prova e obterei a tal
 
 Para me auxilar nesses estudos, dividi o conteúdo em cápitulos. Estudarei cada um aliado a muitos *test killers*.
 
+## Update pós prova (08 de Agosto de 2019)
+
+***Má notícia***: quebrei meu cronograma! Algumas coisas aconteceram, nesse período fui contratado até para fazer um _freela_. Claro que nada disso é desculpa, acredito que todos sempre conseguem um tempo para estudar, mesmo que seja 10 minutos do dia.
+
+***Ótima notícia***: quase dois meses depois de iniciar os estudos, senti confiança, fiz a prova,  conquistei meu certificado e agora sou um **Oracle Certified Associate, Java SE 8 Programmer**!
+
+Um conselho que dou para quem deseja conquistar esse ou qualquer outro objetivo é: tenha metas rigorosas mas palpáveis! Trace um plano e planeje micro metas e check points. 
+
+A primeira coisa que fiz quando decidi estudar para a prova foi marcar uma data. Não digo que você deva marcar imediatamente uma data e estudar loucamente até o dia do exame. Olhe os tópicos do exame, coloque um objetivo de estudo diário e semanal e depois faça uma projeção de quando você conseguirá estudar e revisar todo o conteúdo. Tente ser realista! Se algo der errado no caminho, como aconteceu comigo, adapte seu planejamento. O importante é que você encare essas datas seriamente.
+
+Estudei todo o conteúdo da prova em duas semanas, todos os dias no metrô, ida e volta do trabalho e esporadicamente em casa à noite.
+
+Uma vez terminado os estudos, foquei exclusivamente em test killers. Fiz de um a dois por semana. Como disse, alguns emprevistos aconteceram, entre eles, firmei o compromisso de um freelancer. O importante que quero passar é: pegue seu ritmo de estudos, sem neuras, de uma forma saudável e você passará no exame!
+
 ## O material de estudo
 
 Para iniciar o preparo para o exame, escolhi duas fontes principais:
 
   - <a href="https://www.amazon.com.br/gp/product/8582604769/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1" target="_blank" rel="noopener noreferrer">OCA Java SE 8: Guia de Estudos para o Exame 1Z0-808</a>
   - <a href="https://ler.amazon.com.br/kp/embed?asin=B019NGYH8W&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_lkaaDbD2ZHTTR" target="_blank" rel="noopener noreferrer">Java SE 8 Programmer I: O guia para sua certificação Oracle Certified Associate</a>
+  - <a href="https://enthuware.com" target="_blank" rel="noopener noreferrer">Mocks exames da Enthuware</a>
+  
+ Acredito que não precise inventar muito, a formula é simples: estude os tópicos, só avance quando não tiver dúvidas, faça muitos mock exams!
 
 ## O cronograma 
 
 ### 1) Java Basics
 
- <input type="checkbox" checked disabled> Define the scope of variables
+ - Define the scope of variables
  
- <input type="checkbox" checked disabled> Define the structure of a Java class
+ - Define the structure of a Java class
  
- <input type="checkbox" checked disabled> Create executable Java applications with a main method
+ - Create executable Java applications with a main method
  
- <input type="checkbox" checked disabled> Importante other Java packages to make them accessible in your code
+ - Importante other Java packages to make them accessible in your code
  
 ### 2) Working With Java Data Types
  
  
- <input type="checkbox" checked disabled> Declare and initialize variables
+ - Declare and initialize variables
  
- <input type="checkbox" checked disabled> Differentiate between object reference variables and primitive variables
+ - Differentiate between object reference variables and primitive variables
  
- <input type="checkbox" checked disabled> Read or write to object fields
+ - Read or write to object fields
  
- <input type="checkbox" checked disabled> Explain an Object’s Lifecycle (creation, “dereference” and garbage  collection)
+ - Explain an Object’s Lifecycle (creation, “dereference” and garbage  collection)
  
- <input type="checkbox" checked disabled> Call methods on objects
+ - Call methods on objects
  
- <input type="checkbox" checked disabled> Manipulate data using the StringBuilder class and its methods
+ - Manipulate data using the StringBuilder class and its methods
  
- <input type="checkbox" checked disabled> Creating and manipulating Strings
+ - Creating and manipulating Strings
  
  
 ### 3) Using Operators and Decision Constructs
  
  
- <input type="checkbox" checked disabled> Use Java operators
+ - Use Java operators
  
- <input type="checkbox" checked disabled> Use parenthesis to override operator precedence
+ - Use parenthesis to override operator precedence
  
- <input type="checkbox" checked disabled> Test equality between Strings and other objects using == and equals ()
+ - Test equality between Strings and other objects using == and equals ()
  
- <input type="checkbox" checked disabled> Create if and if/else constructs
+ - Create if and if/else constructs
  
- <input type="checkbox" checked disabled> Use a switch statement
+ - Use a switch statement
  
  
 ### 4) Creating and Using Arrays
  
  
- <input type="checkbox" checked disabled> Declare, instantiate, initialize and use a one-dimensional array
+ - Declare, instantiate, initialize and use a one-dimensional array
  
- <input type="checkbox" checked disabled> Declare, instantiate, initialize and use multi-dimensional array
+ - Declare, instantiate, initialize and use multi-dimensional array
  
- <input type="checkbox" checked disabled> Declare and use an ArrayList
+ - Declare and use an ArrayList
  
  
 ### 5) Using Loop Constructs
  
  
- <input type="checkbox" checked disabled> Create and use while loops
+ - Create and use while loops
  
- <input type="checkbox" checked disabled> Create and use for loops including the enhanced for loop
+ - Create and use for loops including the enhanced for loop
  
- <input type="checkbox" checked disabled> Create and use do/while loops
+ - Create and use do/while loops
  
- <input type="checkbox" checked disabled> Compare loop constructs
+ - Compare loop constructs
  
- <input type="checkbox" checked disabled> Use break and continue
+ - Use break and continue
  
  
 ### 6) Working with Methods and Encapsulation
  
  
- <input type="checkbox" checked disabled> Create methods with arguments and return values
+ - Create methods with arguments and return values
  
- <input type="checkbox" checked disabled> Apply the static keyword to methods and fields
+ - Apply the static keyword to methods and fields
  
- <input type="checkbox" checked disabled> Create an overloaded method
+ - Create an overloaded method
  
- <input type="checkbox" checked disabled> Differentiate between default and user defined constructors
+ - Differentiate between default and user defined constructors
  
- <input type="checkbox" checked disabled> Create and overload constructors
+ - Create and overload constructors
  
- <input type="checkbox" checked disabled> Apply access modifiers
+ - Apply access modifiers
  
- <input type="checkbox" checked disabled> Apply encapsulation principles to a class
+ - Apply encapsulation principles to a class
  
- <input type="checkbox" checked disabled> Determine the effect upon object references and primitive values  when they are passed into methods that change the values
+ - Determine the effect upon object references and primitive values  when they are passed into methods that change the values
  
  
 ### 7) Working with Inheritance
  
  
- <input type="checkbox" checked disabled> Implement inheritance
+ - Implement inheritance
  
- <input type="checkbox" checked disabled> Develop code that demonstrates the use of polymorphism
+ - Develop code that demonstrates the use of polymorphism
  
- <input type="checkbox" checked disabled> Differentiatebetweenthetypeofareferenceandthetypeofanobject
+ - Differentiatebetweenthetypeofareferenceandthetypeofanobject
  
- <input type="checkbox" checked disabled> Determine when casting is necessary
+ - Determine when casting is necessary
  
- <input type="checkbox" checked disabled> Use super and this to access objects and constructors
+ - Use super and this to access objects and constructors
  
- <input type="checkbox" checked disabled> Use abstract classes and interfaces
+ - Use abstract classes and interfaces
  
  
 ### 8) Handling Exceptions
   
- <input type="checkbox" checked disabled> Differentiate among checked exceptions, RuntimeExceptions and  Errors
+ - Differentiate among checked exceptions, RuntimeExceptions and  Errors
  
- <input type="checkbox" checked disabled> Create a try-catch block and determine how exceptions alter normal  program flow
+ - Create a try-catch block and determine how exceptions alter normal  program flow
  
- <input type="checkbox" checked disabled> Describe what Exceptions are used for in Java
+ - Describe what Exceptions are used for in Java
  
- <input type="checkbox" checked disabled> Invoke a method that throws an exception
+ - Invoke a method that throws an exception
  
- <input type="checkbox" checked disabled> Recognize common exception classes and categories
+ - Recognize common exception classes and categories
