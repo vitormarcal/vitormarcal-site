@@ -43,7 +43,7 @@ public class ProductService {
             if (response.isSuccessful()) {
                 return Optional.ofNullable(response.body());
             } else {
-                log.log(Level.WARNING, "O corpo da resposta veio vazia ao chamar products/{}", id);
+                log.log(Level.WARNING, "O corpo da resposta veio vazia ao chamar products com " + id);
                 return Optional.empty();
             }
         } catch (IOException e) {
@@ -51,6 +51,10 @@ public class ProductService {
             return Optional.empty();
         }
 
+    }
+
+    private void print(Product product) {
+        System.out.println(product);
     }
 }
 
@@ -98,7 +102,7 @@ public class FakeInterceptor implements Interceptor {
     @Override
     public Response intercept(Chain chain) throws IOException {
         Response response = null;
-        String responseString = null;
+        String responseString = "{}";
         final List<String> paths = chain.request().url().pathSegments();
 
         Response.Builder builder = new Response.Builder();
@@ -112,7 +116,6 @@ public class FakeInterceptor implements Interceptor {
         }
 
         response = builder
-                .code(200)
                 .message(responseString)
                 .request(chain.request())
                 .protocol(Protocol.HTTP_1_0)
@@ -131,7 +134,7 @@ Agora só precisamos ultilizar o cliente mockado em nossos testes unitários:
 ```
 // package, imports omitidos
 public class ProductServiceTest {
-    private static final StoreApi storeApi = RestClientMock.getClient("wwww.vitormarcal.com.br");
+    private static final StoreApi storeApi = RestClientMock.getClient("https://wwww.mockproduct.com.br");
 
     @Test
     public void printProductOf() {
