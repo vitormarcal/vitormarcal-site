@@ -11,10 +11,10 @@ tags:
   - unit test
 ---
 
-Retrofit é uma lib muito poderosa que facilita muito a vida ao fazer integrações com web services. Quando a conheci, logo me deparei com um problema: como continuar meus testes unitários mockando as respostas do retrofit? É isso que veremos nesse artigo.
+Retrofit é uma biblioteca muito poderosa que facilita muito a vida ao fazer integrações com web services. Quando a conheci, logo me deparei com um problema: como continuar meus testes unitários mockando as respostas do retrofit? É isso que veremos nesse artigo.
 
-Imagine que em sua aplicação existe uma integração a uma Api chamada StoreApi. Nessa hipotética API, você consegue listar produtos e acessar o detalhes dele. Por exemplo, ao consultar a uri `products/`, é retornado uma lista de produtos; ao consultar `products/{id}` é retornado o detalhe de determinado produto.
-Pois bem, em nossa aplicação, temos uma funcionalidade que em determinado ponto busca um produto na  API passando o `id` do product, para apenas imprimir as informações dele. Para nosso exemplo, não importa o que metódos como `isSuccessful` ou `print` faz:
+Imagine que em sua aplicação existe uma integração a uma Api chamada StoreApi. Nessa hipotética API, você consegue listar produtos e acessar seus detalhes. Por exemplo, ao consultar a uri `products/`, é retornado uma lista de produtos; ao fazer uma requisição a  `products/{id}` o retorno é o detalhe de determinado produto.
+Prosseguindo, em nossa aplicação, temos uma funcionalidade que em determinado ponto busca um produto na  API passando o `id` do recurso, para logo após imprimir suas informações. Para nosso exemplo, não importa o que metódos como `isSuccessful` ou `print` faz:
 
 `class ProductService`
 ```
@@ -60,7 +60,7 @@ public class ProductService {
 
 ```
 
-Você deseja criar um teste unitário para o método `printProductOf` mas por algum motivo você não pode fazer uma chamada real a StoreApi e talvez você nem queira realmente fazer essa requisição real: vamos supor que cada requisição gere um custo para você!
+Você deseja criar um teste unitário para o método `printProductOf`, mas por algum motivo você não pode fazer uma chamada real a StoreApi e talvez você nem queira realmente disparar uma requisição verdadeira: vamos supor que cada requisição gere um custo para você!
 Podemos continuar nossos testes simplesmente mockando a `StoreApi` com um `interceptor`:
 
 `class RestClientMock`
@@ -128,7 +128,7 @@ public class FakeInterceptor implements Interceptor {
 }
 ```
 
-Agora só precisamos ultilizar o cliente mockado em nossos testes unitários:
+Agora só precisamos utilizar o cliente mockado em nossos testes unitários:
 
 `class ProductServiceTest`
 ```
