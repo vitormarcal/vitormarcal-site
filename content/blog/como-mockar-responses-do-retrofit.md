@@ -3,8 +3,8 @@ id: 'como-mockar-responses-do-retrofit'
 name: 'como-mockar-responses-do-retrofit'
 title: Como mockar responses do retrofit
 author: Vítor Marçal
-description: Uma simples maneira de mockar reponses do Retrofit e continuar com seus testes unitários
-created_at: 24 de Agosto de  2019
+description: Uma simples maneira de mockar reponses do Retrofit e continuar com seus testes unitários.
+created_at: 27 de Agosto de  2019
 tags:
   - retrofit
   - mock
