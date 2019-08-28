@@ -20,6 +20,7 @@
         const file = await import(`~/content/blog/${params.slug}.md`);
         const post = file.default.html;
         const attr = file.default.attributes;
+        store.dispatch('pull_request/definirUrlBlog', attr.name);
         return {
           post: post,
           attr: attr
@@ -41,7 +42,6 @@
       atributos() {
         this.$store.commit('headers/aplicaHead', this.attr);
         this.$store.commit('keywords/color', this.attr.tags);
-        this.$store.commit('pull_request/hrefBlog', this.attr.name);
         return this.$store.state.headers.head
       },
       estiloTag() {

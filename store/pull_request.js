@@ -6,14 +6,14 @@ export const state = () => ({
 });
 
 export const mutations = {
-  hrefBlog(state, name) {
-    let uri = baseUrl;
-    if (name) {
-      uri += blog + name + '.md';
-    }
-    state.href = uri;
-    console.log(1)
-    console.log(state.href)
-    console.log(2)
+  hrefBlog(state, uri) {
+    state.href = baseUrl + uri;
   },
+};
+
+export const actions = {
+  definirUrlBlog({commit}, name) {
+    let uri = blog + name + '.md';
+    commit('hrefBlog', uri)
+  }
 };
