@@ -14,7 +14,7 @@ tags:
 Retrofit é uma biblioteca muito poderosa que facilita muito a vida ao fazer integrações com web services. Quando a conheci, logo me deparei com um problema: como continuar meus testes unitários mockando as respostas do retrofit? É isso que veremos nesse artigo.
 
 Imagine que em sua aplicação existe uma integração a uma Api chamada StoreApi. Nessa hipotética API, você consegue listar produtos e acessar seus detalhes. Por exemplo, ao consultar a uri `products/`, é retornado uma lista de produtos; ao fazer uma requisição a  `products/{id}` o retorno é o detalhe de determinado produto.
-Prosseguindo, em nossa aplicação, temos uma funcionalidade que em determinado ponto busca um produto na  API passando o `id` do recurso, para logo após imprimir suas informações. Para nosso exemplo, não importa o que metódos como `isSuccessful` ou `print` faz:
+Prosseguindo, em nossa aplicação, temos uma funcionalidade que em determinado ponto busca um produto na  API passando o `id` do recurso, para logo após imprimir suas informações. Para nosso exemplo, não importa o que método `print` faz:
 
 `class ProductService`
 ```
