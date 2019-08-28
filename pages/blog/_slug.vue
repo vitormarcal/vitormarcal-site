@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-
+    <CPullRequest :href="uriPullRequest"/>
     <div class="content">
       <CArticleCabecalho v-if="attr" v-bind:attr="attr" v-bind:estilos="estiloTag"/>
 
@@ -12,8 +12,9 @@
   export default {
     components: {
       CArticleCabecalho: () => import('~/components/blog/ArticleCabecalho'),
+      CPullRequest: () => import('~/components/PullRequest'),
     },
-    async asyncData({params, error}) {
+    async asyncData({params, error, store}) {
 
       try {
         const file = await import(`~/content/blog/${params.slug}.md`);
@@ -39,11 +40,15 @@
     computed: {
       atributos() {
         this.$store.commit('headers/aplicaHead', this.attr);
-        this.$store.commit('keywords/color', this.attr.tags)
+        this.$store.commit('keywords/color', this.attr.tags);
+        this.$store.commit('pull_request/hrefBlog', this.attr.name);
         return this.$store.state.headers.head
       },
       estiloTag() {
         return this.$store.state.keywords.tagColor;
+      },
+      uriPullRequest() {
+        return this.$store.state.pull_request.href;
       }
 
     },
