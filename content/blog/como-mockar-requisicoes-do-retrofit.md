@@ -3,7 +3,7 @@ id: 'como-mockar-requisicoes-do-retrofit'
 name: 'como-mockar-requisicoes-do-retrofit'
 title: Como mockar requisicoes do retrofit
 author: Vítor Marçal
-description: Uma simples maneira de mockar requisições do Retrofit e continuar com seus testes unitários.
+description: Uma simples maneira de mockar requisições ultilizando Retrofit, OkHttp e continuar com seus testes unitários.
 created_at: 27 de Agosto de  2019
 tags:
   - retrofit
@@ -19,35 +19,35 @@ Prosseguindo, em nossa aplicação, temos uma funcionalidade que em determinado 
 `class ProductService`
 ```
 // package, imports omitidos
-public class ProductService {
+class ProductService {
     private final StoreApi storeApi;
     private static final Logger log = Logger.getLogger(ProductService.class.getName());
 
-    public ProductService(StoreApi storeApi) {
+    ProductService(StoreApi storeApi) {
         this.storeApi = storeApi;
     }
 
-    public void printProductOf(Long id) {
+    void printProductOfId(Long id) {
         Optional<Product> optionalProduct = findInStoreApi(id);
         if (optionalProduct.isPresent()) {
             print(optionalProduct.get());
         } else {
-            throw new RuntimeException("Produto não existe");
+            throw new RuntimeException("Product not found");
         }
     }
 
-    private Optional<Product> findInStoreApi(Long id) {
+    Optional<Product> findInStoreApi(Long id) {
         final Response<Product> response;
         try {
             response = this.storeApi.getDetail(id).execute();
             if (response.isSuccessful()) {
                 return Optional.ofNullable(response.body());
             } else {
-                log.log(Level.WARNING, "O corpo da resposta veio vazia ao chamar products com " + id);
+                log.log(Level.WARNING, "The response body is empty with id " + id);
                 return Optional.empty();
             }
         } catch (IOException e) {
-            log.log(Level.WARNING, "Erro com id " + id, e);
+            log.log(Level.WARNING, "Error with id " + id, e);
             return Optional.empty();
         }
 
@@ -67,10 +67,10 @@ Podemos continuar nossos testes simplesmente mockando a `StoreApi` com um `inter
 
 ```
 // package, imports da classe omitidos
-public class RestClientMock {
+class RestClientMock {
     private static StoreApi storeApi;
 
-    public static StoreApi getClient(String endpoint) {
+    static StoreApi getClient() {
         if (storeApi == null) {
             final OkHttpClient client = new OkHttpClient.Builder()
                     .addInterceptor(new FakeInterceptor())
@@ -78,7 +78,7 @@ public class RestClientMock {
 
             final Retrofit retrofit = new Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
-                    .baseUrl(endpoint)
+                    .baseUrl("https://wwww.storemock-api.com.br")
                     .client(client)
                     .build();
 
@@ -100,8 +100,8 @@ public class FakeInterceptor implements Interceptor {
 
 
     @Override
-    public Response intercept(Chain chain) throws IOException {
-        Response response = null;
+    public Response intercept(Chain chain) {
+        Response response;
         String responseString = "{}";
         final List<String> paths = chain.request().url().pathSegments();
 
@@ -134,19 +134,33 @@ Agora só precisamos utilizar o cliente mockado em nossos testes unitários:
 ```
 // package, imports omitidos
 public class ProductServiceTest {
-    private static final StoreApi storeApi = RestClientMock.getClient("https://wwww.mockproduct.com.br");
+    private static final StoreApi storeApi = RestClientMock.getClient();
 
     @Test
-    public void printProductOf() {
+    public void printProductOfId() {
         ProductService productService = new ProductService(storeApi);
-        productService.printProductOf(1L);
-        // algum teste para validar a impressão
+        productService.printProductOfId(1L);
+        // some test to validate the print
     }
 
     @Test(expected = RuntimeException.class)
-    public void dadoIdDeProdutoInexisten_DeveLancarExcessao() {
+    public void giveProductNotFound_ThenThrowRuntimeException() {
         ProductService productService = new ProductService(storeApi);
-        productService.printProductOf(2L);
+        productService.printProductOfId(2L);
+    }
+
+    @Test
+    public void productIsPresent() {
+        ProductService productService = new ProductService(storeApi);
+        Optional<Product> optionalProduct = productService.findInStoreApi(1L);
+        assertTrue(optionalProduct.isPresent());
+    }
+
+    @Test
+    public void productIsNotPresent() {
+        ProductService productService = new ProductService(storeApi);
+        Optional<Product> optionalProduct = productService.findInStoreApi(2L);
+        assertFalse(optionalProduct.isPresent());
     }
 }
 ```
