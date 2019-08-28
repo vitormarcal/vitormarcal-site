@@ -4,7 +4,9 @@
     <span>
       Contribua com este conteúdo! &#128151;
     </span>
-    <span>Mande sua correção/sugestão, diretamente atravês de um <a v-bind:href="href"> Pull Request!</a></span>
+    <span>Mande sua correção/sugestão, diretamente atravês de um
+      <a v-bind:href="href" title="Mande um Pull Request!" target="_blank" rel="noopener noreferrer"> Pull Request!</a>
+    </span>
   </div>
 
 </template>
@@ -25,12 +27,11 @@
     box-shadow: 0 2px 3px 0 rgba(75, 91, 108, 0.2);
     position: fixed;
     left: 4rem;
-    top: 50%;
+    bottom: 11%;
     flex-direction: column;
     padding: 1rem;
     background-color: #f0d1c4;
   }
-
 
 
 </style>
