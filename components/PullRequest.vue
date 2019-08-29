@@ -1,12 +1,12 @@
 <template>
 
   <div class="pull-request">
-    <span>
+    <span class="large">
       Contribua com este conteúdo!
     </span>
-    <span>Mande sua correção ou sugestão, via
+    <span class="large">Mande sua correção ou sugestão, via
     </span>
-    <span>
+    <span class="large">
       <a v-bind:href="href" title="Mande um Pull Request!" target="_blank" rel="noopener noreferrer"> Pull Request no Github!&#128151;</a>
     </span>
   </div>
@@ -23,18 +23,47 @@
 
   .pull-request {
     @extend .texto;
-    font-size: 15px;
+    max-width: 120px;
+    margin: 2px;
     display: flex;
-    max-width: 302px;
+    position: fixed;
+    flex-direction: column;
+    background-color: #f0d1c4;
+    right: 6px;
+    bottom: 1%;
     border: 0 solid rgba(0, 0, 0, 0.125);
     border-radius: .625rem;
     box-shadow: 0 2px 3px 0 rgba(75, 91, 108, 0.2);
-    position: fixed;
-    bottom: 4%;
-    right: 3.5rem;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: #f0d1c4;
+    text-align: center;
+    font-size: 15px;
+
+    .large {
+      display: none;
+
+      &:last-of-type {
+        display: unset;
+      }
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+
+  }
+
+  @media (min-width: 1590px) {
+    .pull-request {
+      font-size: 15px;
+      max-width: 302px;
+      bottom: 4%;
+      right: 3.5rem;
+      padding: 1rem;
+
+      .large {
+        display: unset;
+      }
+
+    }
   }
 
 
