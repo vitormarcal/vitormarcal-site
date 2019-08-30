@@ -1,7 +1,7 @@
 ---
 id: 'como-mockar-requisicoes-do-retrofit'
 name: 'como-mockar-requisicoes-do-retrofit'
-title: Como mockar requisicoes do retrofit
+title: Como mockar requisições do retrofit
 author: Vítor Marçal
 description: Uma simples maneira de mockar requisições ultilizando Retrofit, OkHttp e continuar com seus testes unitários.
 created_at: 27 de Agosto de  2019
