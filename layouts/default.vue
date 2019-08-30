@@ -2,6 +2,7 @@
   <div>
     <main>
         <c-header />
+        <c-day-mode />
         <nuxt />
     </main>
   </div>
@@ -10,6 +11,7 @@
   export default {
     components: {
       CHeader: () => import('~/components/layout/Header'),
+      CDayMode: () => import('~/components/DayMode'),
     }
   }
 </script>
