@@ -2,7 +2,9 @@
   <div class="chamada">
     <h1>{{attr.title}}</h1>
     <p>{{attr.description}}</p>
-    <div class="meta" style="margin-top: 2rem">Escrito por {{attr.author}} em {{attr.created_at}}</div>
+    <div class="meta" style="margin-top: 2rem">Escrito por {{attr.author}} em {{attr.created_at}}<br/>
+      <CReadingTime :post="post"/>
+    </div>
     <div class="meta" v-if="attr.obs" v-html="attr.obs"></div>
     <CTagArticle v-bind:tags="attr.tags" v-bind:estilos="estilos"/>
   </div>
@@ -12,9 +14,10 @@
   export default {
     components: {
       CTagArticle: () => import('~/components/blog/TagArticle'),
+      CReadingTime: () => import('~/components/blog/ReadingTime'),
     },
     name: "PostCabecalho",
-    props: ['attr', 'estilos']
+    props: ['attr', 'estilos', 'post']
   }
 </script>
 
