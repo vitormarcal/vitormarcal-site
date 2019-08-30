@@ -2,7 +2,7 @@
   <div class="container">
     <CPullRequest :href="uriPullRequest"/>
     <div class="content">
-      <CArticleCabecalho v-if="attr" v-bind:attr="attr" v-bind:estilos="estiloTag"/>
+      <CArticleCabecalho v-if="attr" v-bind:attr="attr" v-bind:estilos="estiloTag" v-bind:post="post"/>
 
       <div v-if="post" v-html="post" class="content__post"></div>
     </div>
