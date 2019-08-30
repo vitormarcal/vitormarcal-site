@@ -2,6 +2,7 @@
   <header>
     <c-brand/>
     <c-nav-bar/>
+    <c-day-mode />
 
   </header>
 
@@ -13,6 +14,7 @@
     components: {
       CBrand: () => import('./Brand'),
       CNavBar: () => import('./NavBar'),
+      CDayMode: () => import('~/components/DayMode'),
     }
   }
 </script>
