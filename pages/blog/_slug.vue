@@ -63,5 +63,11 @@
 
   .container {
     margin: 1rem;
+
+    .content {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 3rem;
+    }
   }
 </style>
