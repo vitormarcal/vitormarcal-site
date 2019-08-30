@@ -51,7 +51,7 @@
 
   }
 
-  @media (min-width: 1590px) {
+  @media (min-width: 900px) {
     .pull-request {
       font-size: 15px;
       max-width: 302px;
