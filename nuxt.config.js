@@ -77,7 +77,12 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxtjs/google-analytics'
   ],
+
+  googleAnalytics: {
+    id: 'UA-145801174-1'
+  },
   styleResources: {
     scss: '@/assets/css/*.scss'
   },
