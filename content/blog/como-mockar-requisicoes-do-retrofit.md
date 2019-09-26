@@ -60,7 +60,7 @@ class ProductService {
 
 ```
 
-Você deseja criar um teste unitário para o método `printProductOf`, mas por algum motivo você não pode fazer uma chamada real a StoreApi e talvez você nem queira realmente disparar uma requisição verdadeira: vamos supor que cada requisição gere um custo para você!
+Você deseja criar um teste unitário para o método `printProductOfId`, mas por algum motivo você não pode fazer uma chamada real a StoreApi e talvez você nem queira realmente disparar uma requisição verdadeira: vamos supor que cada requisição gere um custo para você!
 Podemos continuar nossos testes simplesmente mockando a `StoreApi` com um `interceptor`:
 
 `class RestClientMock`
