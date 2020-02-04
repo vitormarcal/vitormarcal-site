@@ -29,8 +29,9 @@
 
       const postList = posts.default.map(e => {
         e.link = `/blog/${e.name}`;
+        e.data_ordenacao = new Date(e.data_ordenacao);
         return e
-      });
+      }).sort((pX, pY) => pY.data_ordenacao - pX.data_ordenacao);
 
       return {postList: postList};
     }

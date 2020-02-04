@@ -5,6 +5,7 @@ title: Como mockar requisições do retrofit
 author: Vítor Marçal
 description: Uma simples maneira de mockar requisições ultilizando Retrofit, OkHttp e continuar com seus testes unitários.
 created_at: 27 de Agosto de  2019
+data_ordenacao: August 27, 2019 00:00:00
 tags:
   - retrofit
   - mock
