@@ -17,7 +17,7 @@ Redescobri, esses dias, Drummond. Li *Não se mate* na adolescência e dessa vez
 Abaixo, o poema, humildemente narrado por mim  &#128540;
 
 <audio controls>
-  <source src="/audios/nao-se-mate-drummond.aac" type="audio/mpeg">
+  <source src="/audios/nao-se-mate-drumm.mp3" type="audio/mpeg">
 Seu navegador não suporta o elemento de áudio.
 </audio>
 
