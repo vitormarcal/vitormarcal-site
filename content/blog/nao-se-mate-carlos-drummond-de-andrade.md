@@ -119,7 +119,7 @@ As pessoas são assim, duas, três coisas ao mesmo tempo. Simples e complexas, s
 
 Mesmo com um turbilhão de sentimentos, que em algum momento nos parece quebrar por dentro, temos a aptidão natural de ser a palmeira que não é derrubada pela tempestade!
 
-Um turbilhão de sentimentos, que como o rádio e TV ligado ao mesmo tempo, um em cada lado do seu ouvido, o silêncio é questão de vida e morte.
+Um turbilhão de sentimentos, que como o rádio e TV ligado ao mesmo tempo, um em cada lado do seu ouvido, faz o silêncio ser questão de vida e morte.
 
 O grito (`como no teatro vazio`) é a proclamação de que sim, aqui tem vida, e viver é maravilhoso!
 
@@ -131,7 +131,7 @@ respeito é qualidade inseparável do amor, mesmo quando este não existe mais.
    é sempre triste, meu filho, Carlos, 
    mas não diga nada a ninguém, ninguém sabe nem saberá.
 ```
-Termino esse texto, ouvindo `While the song remains the same`, Oasis, porque é preciso encontrar-se, conhecer sua essência.
+Termino esse texto, ouvindo `While the song remains the same`, Canção de Noel Gallagher's High Flying Birds, porque é preciso encontrar-se, conhecer sua essência.
 Aqueles momentos incríveis juntos, a certeza de ontem, você era tão feliz e a insegurança de hoje. Talvez não exista mais risos, fotografias.
 Esses momentos continuam aí, os bons e os ruins, por mais que não desejamos passar por isso,
 são os calos em nossa alma.
