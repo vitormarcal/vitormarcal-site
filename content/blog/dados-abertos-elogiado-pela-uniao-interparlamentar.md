@@ -5,6 +5,7 @@ title: Dados Abertos é elogiado pela União Interparlamentar
 author: Vítor Marçal
 description: A organização elogiou, dentre outros, a forma de entrega dos dados e a boa comunicação com a sociedade. Com muito orgulho, fui colaborador desse importante projeto para a sociedade civil.
 created_at: 06 de Julho de  2019
+data_ordenacao: July 6, 2019 00:00:00
 tags:
   - dados abertos
   - restful api

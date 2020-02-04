@@ -5,6 +5,7 @@ title: O caminho para certificação Java 8
 author: Vítor Marçal
 description: Como fui do planejamento à certificação java se 8 IZO-808
 created_at: 13 de Maio de 2019
+data_ordenacao: May 13, 2019 00:00:00
 tags:
   - java
   - certification
