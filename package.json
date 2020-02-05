@@ -19,6 +19,7 @@
     "cross-env": "^5.2.0",
     "frontmatter-markdown-loader": "^1.7.0",
     "nuxt": "^2.8.1",
+    "vue-disqus": "^3.0.5",
     "webpack": "^4.35.3"
   },
   "devDependencies": {
