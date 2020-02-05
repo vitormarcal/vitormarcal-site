@@ -5,12 +5,17 @@
       <CArticleCabecalho v-if="attr" v-bind:attr="attr" v-bind:estilos="estiloTag" v-bind:post="post"/>
 
       <div v-if="post" v-html="post" class="content__post"></div>
+
+      <comments :page_id="attr.id" :shortname="shortName" :url="urlPost" :title="attr.title"></comments>
     </div>
   </div>
 </template>
 <script>
+  import {mapState} from 'vuex'
+  import Comments from "../../components/blog/Comments";
   export default {
     components: {
+      Comments,
       CArticleCabecalho: () => import('~/components/blog/ArticleCabecalho'),
       CPullRequest: () => import('~/components/PullRequest'),
     },
@@ -49,7 +54,13 @@
       },
       uriPullRequest() {
         return this.$store.state.pull_request.href;
-      }
+      },
+      urlPost() {
+        return this.$store.state.disqus.urlPost;
+      },
+      ...mapState({
+        shortName: state => state.disqus.shortName,
+      })
 
     },
     head() {
