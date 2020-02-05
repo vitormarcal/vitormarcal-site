@@ -56,6 +56,7 @@
         return this.$store.state.pull_request.href;
       },
       urlPost() {
+        this.$store.commit('disqus/aplicaUrlPost', this.attr);
         return this.$store.state.disqus.urlPost;
       },
       ...mapState({
