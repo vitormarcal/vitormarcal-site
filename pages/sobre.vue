@@ -1,7 +1,7 @@
 <template>
 
   <div class="about">
-    <section>
+    <section class="hero">
       <figure>
         <img src="~/assets/images/vtormarcal.svg" alt="Vítor Marçal, minha imagem de perfil"/>
         <a href="https://drive.google.com/file/d/0B1bMwtDGQtzseGU3WjJSR2VzWUNkMGhON0Rva1V4YmJyYmQ4/view"
@@ -15,9 +15,9 @@
         </figcaption>
       </figure>
     </section>
-    <section v-html="whoiam"></section>
-    <section v-html="professionalHistory"></section>
-    <section v-html="whatIdoToday"></section>
+    <section v-html="whoiam" class="whoiam"></section>
+    <section v-html="professionalHistory" class="professionalHistory"></section>
+    <section v-html="whatIdoToday" class="whatIdoToday"></section>
   </div>
 
 </template>
@@ -86,6 +86,11 @@
       }
     }
 
+    .hero {
+      margin: 0;
+      padding: 0;
+    }
+
     @media (max-width: 765px) {
       margin: 8rem 1rem 1rem;
     }
@@ -96,6 +101,12 @@
 
     @media (min-width: 1201px) {
       margin: 8rem 16rem 16rem;
+    }
+
+    @media (min-width: 1500px) {
+      .hero, .whoiam {
+        height: 35vh;
+      }
     }
 
     @media (min-width: 1764px) {
