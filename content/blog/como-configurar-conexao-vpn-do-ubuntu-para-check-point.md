@@ -51,7 +51,7 @@ Para configurar siga esses passos:
     snx -s sua.vpn.aqui.com.br -u seu_usuario_aqui
     ```
 
-- Desconecte-se da vpm com o comando:
+- Desconecte-se da vpn com o comando:
 
     ```
     snx -d
