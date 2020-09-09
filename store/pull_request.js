@@ -1,4 +1,4 @@
-const baseUrl = 'https://github.com/vitormarcal/vitormarcal/';
+const baseUrl = 'https://github.com/vitormarcal/vitormarcal-site/';
 const blog = 'blob/master/content/blog/';
 
 export const state = () => ({
