@@ -146,5 +146,6 @@ Isso é tudo o que precisamos. Uma chamada ao componente pode ser feita como:
 ```
 
 Essa é uma forma simples de gerar relatórios aproveitando todas as skills que desenvolvedores têm no frontend. Lembrando que não substitui ferramentas poderosas como iReport, seu uso deverá ser ponderado de acordo com a necessidade e o valor agregado ao seu projeto.
+Um problema dessa solução é que não existe suporte para features do `CSS3`, pela sua inviabilidade de desenvolver e calcular isso por dentro da biblioteca que trasforma html para pdf. Então, se você precisa muito dessas features, usar esta solução é um caso a se pensar.
 
 A implementação completa deste exemplo pode ser <a href="https://github.com/vitormarcal/thymelaf-pdf-example" title="Código completo do artigo" target="_blank" rel="noopener noreferrer">encontrada neste repositório do GitHub</a>.
