@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+input,
+button {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 html {
   overflow-x: hidden;
