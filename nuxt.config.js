@@ -41,6 +41,7 @@ export default {
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {name: 'mobile-web-app-capable', content: 'yes'},
       {name: 'googlebot', content: 'index,follow'},
+      {name: 'google-site-verification', content: 'whdLUvc-Et5uUDCK07o_0CRlJLJ7IwH0ujjTm6MM1Os'},
       {name: 'robots', content: 'index,follow,noodp'},
       {name: 'revisit-after', content: '7 days'},
       {name: 'application-name', content: pkg.title},
