@@ -1,7 +1,10 @@
 <template>
   <li class="card">
     <a :href="project.link" :title="'Página do projeto ' + project.name" rel="noopener noreferrer" target="_blank">
-      <img :src="project.img" :alt="project.alt">
+      <div>
+        <img :src="project.img" :alt="project.alt">
+      </div>
+
 
       <h2>{{ project.name }}</h2>
       <p class="description">
