@@ -1,13 +1,14 @@
 <template>
   <li class="card">
-    <a :href="project.link" rel="noopener noreferrer" target="_blank">
+    <a :href="project.link">
       <img :src="project.img" :alt="project.alt">
+
+      <h2>{{ project.name }}</h2>
+      <p class="description">
+        {{ project.description }}
+      </p>
     </a>
-    <h2>{{ project.name }}</h2>
-    <p class="description">
-      {{ project.description }}
-    </p>
-    <input type="button" value="Ver projeto">
+
   </li>
 </template>
 
@@ -59,10 +60,12 @@ export default {
     font-weight: normal;
     color: #000000;
     margin: 2rem 0 0;
+    text-align: center;
   }
 
   p {
     padding: 0 1rem 0 1rem;
+    text-align: center;
   }
 
   input {
