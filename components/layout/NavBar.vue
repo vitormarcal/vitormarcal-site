@@ -31,6 +31,12 @@
             ativo: true
           },
           {
+            link: '/portfolio',
+            title: 'Portfolio',
+            text: 'portfolio',
+            ativo: true
+          },
+          {
             link: '/contato',
             title: 'Contato',
             text: 'contato',
