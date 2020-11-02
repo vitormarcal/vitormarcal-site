@@ -7,9 +7,9 @@
           <a :href="project.link" rel="noopener noreferrer" target="_blank">
             <img :src="project.img" :alt="project.alt">
           </a>
-          <h2>{{project.name}}</h2>
+          <h2>{{ project.name }}</h2>
           <p class="description">
-            {{project.description}}
+            {{ project.description }}
           </p>
           <input type="button" value="Ver projeto">
         </li>
@@ -26,13 +26,7 @@ import {mapState} from 'vuex'
 export default {
   name: "portfolio",
   created() {
-    const payloadUrl = 'https://raw.githubusercontent.com/vitormarcal/portfolio-store/master/payload.json';
-    const options = {
-      method: 'GET',
-    };
-    fetch(payloadUrl, options)
-      .then(r => r.json())
-      .then(payload => this.$store.dispatch('portfolio/setProject', payload))
+    this.$store.dispatch('portfolio/setProject')
   },
   computed: {
     ...mapState({
