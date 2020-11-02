@@ -39,14 +39,17 @@ export default {
 <style scoped lang="scss">
 
 .container {
-  margin: 10rem;
+  margin: 8rem 1rem 1rem 1rem;
   padding-top: 0;
+  min-width: 300px;
 
   ul {
     width: auto;
     margin: 0 0 10rem;
     display: grid;
+    gap: 20px;
     list-style: none;
+    padding: 0;
 
     .card {
       display: flex;
@@ -76,10 +79,16 @@ export default {
         }
 
       }
+      h1 {
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        color: #000000;
+        margin: 2rem 0 0;
+      }
 
       p {
-        margin-top: 2rem;
-        padding: 1rem;
+        padding: 0 1rem 0 1rem;
       }
 
       input {
@@ -115,6 +124,7 @@ export default {
   }
 
   @media (min-width: 1051px) {
+    margin: 10rem;
     ul {
       grid-template-columns: 1fr 1fr;
     }
