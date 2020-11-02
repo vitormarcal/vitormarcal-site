@@ -78,8 +78,6 @@ export default {
       width: auto;
       margin: 0 0 10rem;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
       list-style: none;
 
       .card {
@@ -136,6 +134,28 @@ export default {
           }
         }
 
+      }
+
+    }
+
+
+    @media (max-width: 1050px) {
+      ul {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (min-width: 1051px) {
+      ul {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+    @media (min-width: 1351px) {
+      ul {
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
     }
