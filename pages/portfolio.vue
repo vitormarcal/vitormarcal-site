@@ -13,12 +13,10 @@
 
 <script>
 import {mapState} from 'vuex'
-import ProjectCard from "~/components/portfolio/ProjectCard";
 
 export default {
   name: "portfolio",
-  components: {ProjectCard},
-  comments: {
+  components: {
     ProjectCard: () => import('~/components/portfolio/ProjectCard')
   },
   created() {
