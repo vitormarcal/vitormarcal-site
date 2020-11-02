@@ -4,7 +4,7 @@
     <ul>
       <li class="card">
         <a href="https://huddle-landing-page.vitormarcal.com.br/" rel="noopener noreferrer" target="_blank">
-          <img src="@/assets/images/huddle-landig-page.png" alt="Desktop design screenshot for project">
+          <img src="/images/huddle-landig-page.png" alt="Desktop design screenshot for project">
         </a>
         <p class="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -14,18 +14,7 @@
 
       <li class="card">
         <a href="#" rel="noopener noreferrer" target="_blank">
-          <img src="~/assets/images/four-card-section.png" alt="Desktop design screenshot for project">
-        </a>
-
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <input type="button" value="Ver projeto">
-      </li>
-
-      <li class="card">
-        <a href="#" rel="noopener noreferrer" target="_blank">
-          <img src="~/assets/images/fylo.png" alt="Desktop design screenshot for project">
+          <img src="/images/four-card-section.png" alt="Desktop design screenshot for project">
         </a>
 
         <p class="description">
@@ -36,7 +25,7 @@
 
       <li class="card">
         <a href="#" rel="noopener noreferrer" target="_blank">
-          <img src="~/assets/images/personal-site.png" alt="Desktop design screenshot for project">
+          <img src="/images/fylo.png" alt="Desktop design screenshot for project">
         </a>
 
         <p class="description">
@@ -47,7 +36,18 @@
 
       <li class="card">
         <a href="#" rel="noopener noreferrer" target="_blank">
-          <img src="~/assets/images/testimonials.png" alt="Desktop design screenshot for project">
+          <img src="/images/personal-site.png" alt="Desktop design screenshot for project">
+        </a>
+
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <input type="button" value="Ver projeto">
+      </li>
+
+      <li class="card">
+        <a href="#" rel="noopener noreferrer" target="_blank">
+          <img src="/images/testimonials.png" alt="Desktop design screenshot for project">
         </a>
 
         <p class="description">
