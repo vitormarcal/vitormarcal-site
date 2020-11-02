@@ -36,7 +36,7 @@
 
       <li class="card">
         <a href="#" rel="noopener noreferrer" target="_blank">
-          <img src="/images/personal-site.png" alt="Desktop design screenshot for project">
+          <img src="/images/personal-site.jpg" alt="Desktop design screenshot for project">
         </a>
 
         <p class="description">
