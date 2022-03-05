@@ -105,7 +105,7 @@
 
     @media (min-width: 1500px) {
       .hero, .whoiam {
-        height: 35vh;
+        height: 75vh;
       }
     }
 
