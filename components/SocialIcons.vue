@@ -1,6 +1,6 @@
 <template>
   <div class="social_icons">
-    <a href="mailto:vitormarcal8@gmail.com" title="Email me" target="_blank" rel="noopener noreferrer">
+    <a href="mailto:hi+meajuda@vitormarcal.com.br" title="Email me" target="_blank" rel="noopener noreferrer">
       <img src="~/assets/images/mailme.svg" alt="Email me "/>
     </a>
     <a href="https://github.com/vitormarcal" title="Meu github" target="_blank" rel="noopener noreferrer">
