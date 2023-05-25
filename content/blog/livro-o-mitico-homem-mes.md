@@ -1,6 +1,6 @@
 ---
 id: 'livro-o-mitico-homem-mes'
-name: 'livro-o-mitico-do-homem-mes'
+name: 'livro-o-mitico-homem-mes'
 title: 'Livro: O mítico homem-mês'
 author: Vítor Marçal
 description:  Neste artigo, exploraremos os principais pontos abordados na obra O mítico Homem-Mês, destacando suas lições cruciais para o sucesso no gerenciamento de projetos.
