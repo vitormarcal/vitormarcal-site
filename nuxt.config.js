@@ -80,8 +80,13 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://www.vitormarcal.com.br',
+  },
 
   googleAnalytics: {
     id: 'UA-145801174-1'
