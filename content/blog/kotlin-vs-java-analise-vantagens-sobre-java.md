@@ -1,4 +1,4 @@
-~~---
+---
 id: 'kotlin-vs-java-analise-vantagens-sobre-java'
 name: 'kotlin-vs-java-analise-vantagens-sobre-java'
 title: "Kotlin vs. Java: Uma análise das vantagens da linguagem Kotlin"
@@ -149,6 +149,6 @@ fun main() {
 
 ## Comunidade ativa e suporte da JetBrains:
 
-Kotlin é uma linguagem de código aberto com uma comunidade crescente de desenvolvedores. A JetBrains, empresa responsável pelo desenvolvimento do Kotlin, oferece suporte contínuo à linguagem, fornecendo ferramentas, documentação e atualizações regulares. A comunidade Kotlin é conhecida por ser acolhedora e colaborativa, o que torna mais fácil encontrar ajuda e recursos para desenvolver aplicativos em Kotlin.~~
+Kotlin é uma linguagem de código aberto com uma comunidade crescente de desenvolvedores. A JetBrains, empresa responsável pelo desenvolvimento do Kotlin, oferece suporte contínuo à linguagem, fornecendo ferramentas, documentação e atualizações regulares. A comunidade Kotlin é conhecida por ser acolhedora e colaborativa, o que torna mais fácil encontrar ajuda e recursos para desenvolver aplicativos em Kotlin.
 
 
