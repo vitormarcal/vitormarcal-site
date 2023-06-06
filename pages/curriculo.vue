@@ -3,6 +3,7 @@
   <div class="curriculo">
     <section v-html="head" id="curriculo-head"></section>
     <section v-html="skills" id="curriculo-skills"></section>
+    <section v-html="education" id="curriculo-education"></section>
     <section v-html="experience" id="curriculo-experience"></section>
     <section v-html="otherInfo" id="curriculo-otherInfo" v-if="otherInfo"></section>
   </div>
@@ -12,6 +13,7 @@
 <script>
 import head from '@/content/pages/curriculo/head.md'
 import skills from '@/content/pages/curriculo/skills.md'
+import education from '@/content/pages/curriculo/education.md'
 import experience from '@/content/pages/curriculo/experience.md'
 import otherInfo from '@/content/pages/curriculo/other-info.md'
 
@@ -20,6 +22,7 @@ export default {
   computed: {
     head: () => head.html,
     skills: () => skills.html,
+    education: () => education.html,
     experience: () => experience.html,
     otherInfo: () => otherInfo.html,
   }
@@ -57,6 +60,11 @@ export default {
   @media (min-width: 1764px) {
     margin: 8rem 20rem 20rem;
   }
+
+  @media print {
+    margin-top: 0;
+  }
+
 }
 
 

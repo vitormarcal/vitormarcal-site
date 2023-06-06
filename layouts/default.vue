@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-        <c-header />
+        <c-header class="no-print"/>
         <nuxt />
     </main>
   </div>
