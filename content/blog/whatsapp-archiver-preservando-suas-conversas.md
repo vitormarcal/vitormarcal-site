@@ -4,7 +4,7 @@ name: 'whatsapp-archiver-preservando-suas-conversas'
 title: '📱💬 Preservando suas conversas do WhatsApp: Apresentando o WhatsApp Archiver 💬📱'
 author: Vítor Marçal
 description: WhatsApp Archiver é um sistema desenvolvido em Node.js e Vue.js que permite importar, organizar e reproduzir mensagens do WhatsApp. Com o objetivo de preservar suas conversas, o projeto oferece controle independente sobre os dados, facilitando a realização de backups e mantendo suas mensagens em um formato não proprietário.
-created_at: 25 de Maio de 2025
+created_at: 25 de Maio de 2023
 data_ordenacao: May 25, 2023 15:28:00
 tags:
   - whatsapp-archiver
@@ -30,3 +30,4 @@ Lembre-se, a segurança e a privacidade são prioridades neste projeto. Portanto
 Não deixe suas conversas importantes se perderem! Com o WhatsApp Archiver, você pode ter o controle total sobre suas mensagens do WhatsApp, preservando suas memórias e mantendo-as seguras e acessíveis.
 
 Vamos preservar nossas conversas juntos! 📥💬
+3
