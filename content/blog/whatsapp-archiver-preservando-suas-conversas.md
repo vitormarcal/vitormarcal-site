@@ -30,4 +30,3 @@ Lembre-se, a segurança e a privacidade são prioridades neste projeto. Portanto
 Não deixe suas conversas importantes se perderem! Com o WhatsApp Archiver, você pode ter o controle total sobre suas mensagens do WhatsApp, preservando suas memórias e mantendo-as seguras e acessíveis.
 
 Vamos preservar nossas conversas juntos! 📥💬
-3
