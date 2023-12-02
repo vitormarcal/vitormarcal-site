@@ -2,7 +2,12 @@
   <nav>
     <ul>
       <li v-for="item in navItems.filter(i => i.ativo)">
-        <nuxt-link class="nav-link" :to="item.link" :title="item.title">
+        <a v-if="item.externo" :href="item.link" :title="item.title" class="nav-link">
+          <span>{</span>
+          {{item.text}}
+          <span>}</span>
+        </a>
+        <nuxt-link v-else class="nav-link" :to="item.link" :title="item.title">
           <span>{</span>
           {{item.text}}
           <span>}</span>
@@ -23,6 +28,13 @@
             title: 'Página inicial',
             text: 'inicio',
             ativo: true
+          },
+          {
+            link: 'https://marcal.dev/',
+            title: 'Novo Site',
+            text: 'novo site',
+            ativo: true,
+            externo: true
           },
           {
             link: '/sobre',
