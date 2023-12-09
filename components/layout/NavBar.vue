@@ -30,7 +30,7 @@
             ativo: true
           },
           {
-            link: 'https://marcal.dev/',
+            link: 'https://www.marcal.dev/',
             title: 'Novo Site',
             text: 'novo site',
             ativo: true,
